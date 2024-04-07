@@ -38,14 +38,15 @@ export default function CardUser(props: any) {
           overflow={"hidden"}
           whiteSpace={"nowrap"}
           textOverflow={"ellipsis"}
+          color={"white"}
         >
           {props?.full_name}
         </Text>
-        <Text fontSize={"xs"} color={"grey"}>
+        <Text fontSize={"xs"} color={"white"}>
           @{props?.username}
         </Text>
         {props?.description && (
-          <Text fontSize={"xs"} color={"grey"}>
+          <Text fontSize={"xs"} color={"white"}>
             {props?.description}
           </Text>
         )}

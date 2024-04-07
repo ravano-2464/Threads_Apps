@@ -33,7 +33,7 @@ export default function ListUser() {
         paddingY={"20px"}
         width="620px"
         marginLeft={"-10px"}
-        borderColor={"brand.grey"}
+        borderColor={"brand.white"}
       >
         <InputGroup>
           <InputLeftElement pointerEvents="none">

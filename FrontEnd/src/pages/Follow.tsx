@@ -61,7 +61,7 @@ export default function Follow() {
         paddingY={"20px"}
         width="620px"
         marginLeft={"-10px"}
-        borderColor={"brand.grey"}
+        borderColor={"brand.white"}
       >
         <Text fontWeight={"bold"} fontSize={"xl"} mb={4} color={"white"}>
           Follow

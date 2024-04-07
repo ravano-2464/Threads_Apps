@@ -35,7 +35,7 @@ export const ThreadCard = (props: IThreadCard): React.JSX.Element => {
         <Box w={"70%"}>
           <Box display={"flex"} alignItems={"center"}>
             <Text fontWeight={"bold"}>{props.users?.full_name}</Text>
-            <Text ms={2} color="grey" fontSize={"sm"}>
+            <Text ms={2} color="white" fontSize={"sm"}>
               @{props.users?.username}
             </Text>
             <BsCircleFill
@@ -46,7 +46,7 @@ export const ThreadCard = (props: IThreadCard): React.JSX.Element => {
                 color: "#dbdbdb",
               }}
             />
-            <Text ms={2} color="grey" fontSize={"sm"}>
+            <Text ms={2} color="white" fontSize={"sm"}>
               {useTimes(props.posted_at)}
             </Text>
           </Box>

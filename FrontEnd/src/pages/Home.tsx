@@ -40,7 +40,7 @@ export default function Home() {
         alignItems={"center"}
         flexDirection={"column"}
         paddingY={"20px"}
-        borderColor={"brand.grey"}
+        borderColor={"brand.white"}
       >
         <Box
           width={"100%"}
@@ -68,6 +68,7 @@ export default function Home() {
               <Input
                 placeholder="Apa yang sedang kamu pikirkan..."
                 name="content"
+                color={"white"}
                 onChange={handleChange}
                 value={form.content}
                 border={"none"}
@@ -87,6 +88,7 @@ export default function Home() {
               <Input
                 type="file"
                 name="image"
+                color={"white"}
                 onChange={handleChange}
                 style={{ display: "none" }}
                 ref={fileInputRef}

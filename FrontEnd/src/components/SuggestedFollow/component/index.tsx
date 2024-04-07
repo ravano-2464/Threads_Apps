@@ -51,10 +51,11 @@ export const SuggestedFollow = (): React.JSX.Element => {
                   overflow={"hidden"}
                   whiteSpace={"nowrap"}
                   textOverflow={"ellipsis"}
+                  color={"white"}
                 >
                   {item?.full_name}
                 </Text>
-                <Text fontSize={"xs"} color={"grey"}>
+                <Text fontSize={"xs"} color={"white"}>
                   @{item?.username}
                 </Text>
               </Box>

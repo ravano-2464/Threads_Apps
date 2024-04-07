@@ -1,6 +1,6 @@
 // import { Box, Text, Button, } from '@chakra-ui/react'
 // import { Link, useNavigate } from 'react-router-dom'
-// import { AiFillHome, AiOutlineSearch, AiOutlineHeart, AiOutlineUser } from 'react-icons/ai'
+// import { faHome, faSearch, faHeart, faUser } from 'react-icons/ai'
 // import { useSelector } from 'react-redux'
 // import { RootState } from '@/store/type/RootState'
 // import React from 'react'
@@ -30,9 +30,9 @@
 //         gap={2} 
 //         fontSize={"lg"}
 //         onClick={() => handleNavActive("home", "/")}
-//         color={navIsActive === "home" ? "red" : "grey"}
+//         color={navIsActive === "home" ? "red" : "white"}
 //       >
-//         <AiFillHome />
+//         <faHome />
 //         <Text> Home</Text>
 //       </Button>
 
@@ -43,9 +43,9 @@
 //         gap={2} 
 //         fontSize={"lg"}
 //         onClick={() => handleNavActive("search", "/search")}
-//         color={navIsActive === "search" ? "red" : "grey"}
+//         color={navIsActive === "search" ? "red" : "white"}
 //       >
-//         <AiOutlineSearch />
+//         <faSearch />
 //         <Text> Search</Text>
 //       </Button>
 
@@ -56,7 +56,7 @@
 //         fontSize={"lg"}
 //         onClick={() => navigate(`/follow`)}
 //       >
-//         <AiOutlineHeart />
+//         <faHeart />
 //         <Text> Follow</Text>
 //       </Button>
 
@@ -67,7 +67,7 @@
 //         fontSize={"lg"}
 //         onClick={() => navigate(`/profile/${auth.id}`)}
 //       >
-//         <AiOutlineUser />
+//         <faUser />
 //         <Text> Profile</Text>
 //       </Button>
 
@@ -86,7 +86,8 @@
 
 import { Box, Text, Button } from '@chakra-ui/react'
 import { Link, useLocation } from 'react-router-dom'
-import { AiFillHome, AiOutlineSearch, AiOutlineHeart, AiOutlineUser, AiFillHeart } from 'react-icons/ai'
+import { faHome, faSearch, faHeart, faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useSelector } from 'react-redux'
 import { RootState } from '@/store/type/RootState'
 import React from 'react'
@@ -96,7 +97,7 @@ export function Navbar() {
   const auth = useSelector((root: RootState) => root.auth)
 
   const isActive = (path: string) => {
-    return pathname === path ? "white" : "#1d1d1d";
+    return pathname === path ? "white" : "white";
   }
 
   return (
@@ -113,11 +114,11 @@ export function Navbar() {
         _hover={{textDecoration: "underline"}} 
         fontSize={"xl"}
         color={isActive("/")}
+        fontWeight={pathname === "/" ? "bold" : "normal"}
       >
-        <AiFillHome />
-        <Link to="/">Home</Link>
+        <FontAwesomeIcon icon={faHome} color="white" />
+        <Link to="/" color="white">Home</Link>
       </Box>
-
       
       <Box 
         display={"flex"}
@@ -128,8 +129,8 @@ export function Navbar() {
         fontSize={"xl"}
         color={isActive("/search")}
         >
-        <AiOutlineSearch />
-        <Link to="/search">Search</Link>
+        <FontAwesomeIcon icon={faSearch} color="white" />
+        <Link to="/search" color="white">Search</Link>
       </Box>
 
       <Box 
@@ -140,8 +141,8 @@ export function Navbar() {
         _hover={{textDecoration: "underline"}} 
         fontSize={"xl"}
         color={isActive("/follow")}>
-        {pathname === "/follow" ? (<AiFillHeart />) : (<AiOutlineHeart />) }
-        <Link to="/follow">Follow</Link>
+        <FontAwesomeIcon icon={faHeart} color="white" />
+        <Link to="/follow" color="white">Follow</Link>
       </Box>
 
       <Box 
@@ -152,8 +153,8 @@ export function Navbar() {
         _hover={{textDecoration: "underline"}} 
         fontSize={"xl"}
         color={isActive(`/profile/${auth.id}`)}>
-        <AiOutlineUser />
-        <Link to={`/profile/${auth.id}`}>Profile</Link>
+        <FontAwesomeIcon icon={faUser} color="white" />
+        <Link to={`/profile/${auth.id}`} color="white">Profile</Link>
       </Box>
 
       <Button

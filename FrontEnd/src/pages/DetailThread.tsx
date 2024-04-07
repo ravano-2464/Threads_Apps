@@ -66,7 +66,7 @@ export default function DetailThread() {
         paddingY={"20px"}
         width="660px"
         marginLeft={"-30px"}
-        borderColor={"brand.grey"}
+        borderColor={"brand.white"}
       >
         <ThreadCard
           id={data?.id}
@@ -130,7 +130,7 @@ export default function DetailThread() {
               <Box>
                 <Box display={"flex"} alignItems={'center'}>
                   <Text fontWeight={"bold"}>{data.users?.full_name}</Text>
-                  <Text ms={2} color="grey" fontSize={"sm"}>@{data.users?.username}</Text>
+                  <Text ms={2} color="white" fontSize={"sm"}>@{data.users?.username}</Text>
                 </Box>
             
                 <Text>{data?.content}</Text>
