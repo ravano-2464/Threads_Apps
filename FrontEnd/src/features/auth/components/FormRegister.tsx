@@ -22,57 +22,65 @@ export default function FormRegister() {
             Create account circle
           </Text>
           <form onSubmit={handleRegister}>
-            <FormControl>
-            <Input 
-               border={"2px solid #d3d3d3"}
-               fontSize={"sm"}
-               placeholder="Full Name *" 
-               name="full_name" 
-               color={"white"}
-               value={form.full_name}
-               onChange={handleChange}
-              />
-              <Input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="Username *"
-                color={"white"}
-                value={form.username}
-                onChange={handleChange}
-              />
-              <Input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email *"
-                color={"white"}
-                value={form.email}
-                onChange={handleChange}
-              />
-              <Input
-                type="password"
-                id="password"
-                name="password"
-                placeholder="Password *"
-                color={"white"}
-                value={form.password}
-                onChange={handleChange}
-              />
-            <Button
-              type="submit"
-              colorScheme="teal"
-              color="#ffffff"
-              py={5}
-              mt={4}
-              size="xs"
-              w="100%"
-              bg="#04A51E"
-              borderRadius="10px"
-            >
-              Create Account
-            </Button>
-            </FormControl>
+            <VStack spacing={4}>
+              <FormControl>
+                <Input
+                  border={"2px solid #d3d3d3"}
+                  fontSize={"sm"}
+                  placeholder="Full Name *"
+                  name="full_name"
+                  color={"white"}
+                  value={form.full_name}
+                  onChange={handleChange}
+                />
+              </FormControl>
+              <FormControl>
+                <Input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Username *"
+                  color={"white"}
+                  value={form.username}
+                  onChange={handleChange}
+                />
+              </FormControl>
+              <FormControl>
+                <Input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email *"
+                  color={"white"}
+                  value={form.email}
+                  onChange={handleChange}
+                />
+              </FormControl>
+              <FormControl>
+                <Input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password *"
+                  color={"white"}
+                  value={form.password}
+                  onChange={handleChange}
+                />
+              </FormControl>
+              <Button
+                type="submit"
+                colorScheme="teal"
+                color="#ffffff"
+                py={5}
+                mt={4}
+                size="xs"
+                w="100%"
+                bg="#04A51E"
+                borderRadius="10px"
+              >
+                Create Account
+              </Button>
+            </VStack>
           </form>
         </VStack>
       </Box>

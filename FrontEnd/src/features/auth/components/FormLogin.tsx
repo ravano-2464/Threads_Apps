@@ -36,6 +36,7 @@ const FormLogin = () : React.JSX.Element => {
         fontSize={"sm"}
         placeholder="Email" 
         name="email" 
+        color={"white"}
         onChange={handleChange} 
         onKeyDown={handleKeyPress}         
       />
@@ -45,6 +46,7 @@ const FormLogin = () : React.JSX.Element => {
         type="password" 
         placeholder="Password" 
         name="password" 
+        color={"white"}
         onChange={handleChange}    
         onKeyDown={handleKeyPress} 
       />
