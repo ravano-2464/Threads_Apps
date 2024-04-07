@@ -55,7 +55,7 @@ export default function Profile() {
   }, []);
 
   return (
-    <Box backgroundColor="black" height={"100vh"} overflowY={"scroll"}>
+    <Box backgroundColor="#1d1d1d" height={"100vh"} overflowY={"scroll"}>
       <Box
         display={"flex"}
         width={"320px"}

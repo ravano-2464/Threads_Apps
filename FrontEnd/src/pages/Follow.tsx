@@ -93,7 +93,7 @@ export default function Follow() {
           </Box>
         </Box>
 
-        <Box px={4}>
+        <Box px={4} color={"white"}>
           {follows?.map((follow, index) => (
             <Follows
               key={index}

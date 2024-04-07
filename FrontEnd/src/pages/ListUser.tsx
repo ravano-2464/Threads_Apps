@@ -43,6 +43,7 @@ export default function ListUser() {
             variant={"outline"}
             borderRadius={"full"}
             placeholder="Search account ?"
+            color={"white"}
             fontSize={"sm"}
             border={"1px solid #d3d3d3"}
             type="text"
