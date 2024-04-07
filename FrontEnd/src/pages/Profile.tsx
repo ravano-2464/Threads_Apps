@@ -55,7 +55,7 @@ export default function Profile() {
   }, []);
 
   return (
-    <Box height={"100vh"} overflowY={"scroll"}>
+    <Box backgroundColor="black" height={"100vh"} overflowY={"scroll"}>
       <Box
         display={"flex"}
         width={"320px"}
@@ -63,7 +63,6 @@ export default function Profile() {
         position={"fixed"}
         left={"20px"}
         paddingRight={"30px"}
-        borderRight={"1px solid #d3d3d3"}
         h={"100vh"}
       >
         <Box width={"100%"} display={"flex"} flexDirection={"column"} gap={2}>
@@ -80,8 +79,8 @@ export default function Profile() {
             onClick={() => navigate("/")}
             mt={4}
           >
-            <AiOutlineArrowLeft />
-            <Text ms={4} fontWeight={"bold"} fontSize={"xl"}>
+            <AiOutlineArrowLeft color={"white"}/>
+            <Text ms={4} fontWeight={"bold"} fontSize={"xl"} color={"white"}>
               {auth?.full_name}
             </Text>
           </Box>
@@ -111,6 +110,7 @@ export default function Profile() {
 
           <Box display={"flex"} justifyContent={"end"}>
             <Button
+              color={"white"}
               variant={"outline"}
               borderRadius={"full"}
               size={"xs"}
@@ -136,17 +136,17 @@ export default function Profile() {
           {auth?.description ? (
             <Text>{auth?.description}</Text>
           ) : (
-            <Text>Set your description...</Text>
+            <Text color={"white"}>Set your description...</Text>
           )}
 
           <Box display={"flex"} gap={5} mt={1}>
             <Box display={"flex"} gap={2} fontSize={"sm"}>
               <Text fontWeight={"bold"} color={"white"}>{0}</Text>
-              <Text>Following</Text>
+              <Text color={"white"}>Following</Text>
             </Box>
             <Box display={"flex"} gap={2} fontSize={"sm"}>
               <Text fontWeight={"bold"} color={"white"}>{0}</Text>
-              <Text>Followers</Text>
+              <Text color={"white"}>Followers</Text>
             </Box>
           </Box>
         </Box>
@@ -159,7 +159,7 @@ export default function Profile() {
             pb={2}
             borderBottom={isAllPost ? "1px solid white" : "1px solid #dbdbdb"}
           >
-            <Text textAlign={"center"}>All Post</Text>
+            <Text textAlign={"center"} color={"white"}>All Post</Text>
           </Box>
           <Box
             w={"full"}
@@ -168,7 +168,7 @@ export default function Profile() {
             pb={2}
             borderBottom={isMedia ? "1px solid white" : "1px solid #dbdbdb"}
           >
-            <Text textAlign={"center"}>Media</Text>
+            <Text textAlign={"center"} color={"white"}>Media</Text>
           </Box>
         </Box>
 
@@ -189,7 +189,7 @@ export default function Profile() {
                 />
               ))
             ) : (
-              <Text textAlign={"center"} fontWeight={"bold"} mt={10}>
+              <Text textAlign={"center"} fontWeight={"bold"} mt={10} color={"white"}>
                 No Posts Yet
               </Text>
             )
@@ -202,7 +202,7 @@ export default function Profile() {
               ))}
             </Grid>
           ) : (
-            <Text textAlign={"center"} fontWeight={"bold"} mt={10}>
+            <Text textAlign={"center"} fontWeight={"bold"} mt={10} color={"white"}>
               No Media Yet
             </Text>
           )}
@@ -218,7 +218,6 @@ export default function Profile() {
         top={"0px"}
         paddingTop={"10px"}
         paddingLeft={"35px"}
-        borderLeft={"1px solid #d3d3d3"}
         h={"100vh"}
       >
         <Box mt={4}>
