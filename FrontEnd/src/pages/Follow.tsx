@@ -63,7 +63,7 @@ export default function Follow() {
         marginLeft={"-10px"}
         borderColor={"brand.grey"}
       >
-        <Text fontWeight={"bold"} fontSize={"xl"} mb={4}>
+        <Text fontWeight={"bold"} fontSize={"xl"} mb={4} color={'white'}>
           Follow
         </Text>
 
@@ -73,7 +73,8 @@ export default function Follow() {
               w={"full"}
               fontSize={"md"}
               pb={2}
-              borderBottom={isActiveFollowers ? "1px solid red" : "1px solid #dbdbdb"}
+              color={'white'}
+              borderBottom={isActiveFollowers ? "1px solid white" : "1px solid #dbdbdb"}
             >
               Followers
             </Text>
@@ -84,7 +85,8 @@ export default function Follow() {
               w={"full"}
               fontSize={"md"}
               pb={2}
-              borderBottom={isActiveFollowing ? "1px solid red" : "1px solid #dbdbdb"}
+              color={'white'}
+              borderBottom={isActiveFollowing ? "1px solid white" : "1px solid #dbdbdb"}
             >
               Following
             </Text>

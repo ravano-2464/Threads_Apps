@@ -127,10 +127,10 @@ export default function Profile() {
         </Box>
 
         <Box>
-          <Text fontWeight={"bold"} fontSize={"2xl"}>
+          <Text fontWeight={"bold"} fontSize={"2xl"} color={'white'}>
             {auth?.full_name}
           </Text>
-          <Text color={"gray"} fontSize={"sm"}>
+          <Text color={"white"} fontSize={"sm"}>
             @{auth?.username}
           </Text>
           {auth?.description ? (
@@ -141,11 +141,11 @@ export default function Profile() {
 
           <Box display={"flex"} gap={5} mt={1}>
             <Box display={"flex"} gap={2} fontSize={"sm"}>
-              <Text fontWeight={"bold"}>{0}</Text>
+              <Text fontWeight={"bold"} color={'white'}>{0}</Text>
               <Text>Following</Text>
             </Box>
             <Box display={"flex"} gap={2} fontSize={"sm"}>
-              <Text fontWeight={"bold"}>{0}</Text>
+              <Text fontWeight={"bold"} color={'white'}>{0}</Text>
               <Text>Followers</Text>
             </Box>
           </Box>
@@ -157,7 +157,7 @@ export default function Profile() {
             onClick={handleAllPostChange}
             cursor={"pointer"}
             pb={2}
-            borderBottom={isAllPost ? "1px solid red" : "1px solid #dbdbdb"}
+            borderBottom={isAllPost ? "1px solid white" : "1px solid #dbdbdb"}
           >
             <Text textAlign={"center"}>All Post</Text>
           </Box>
@@ -166,7 +166,7 @@ export default function Profile() {
             onClick={handleIsMediaChange}
             cursor={"pointer"}
             pb={2}
-            borderBottom={isMedia ? "1px solid red" : "1px solid #dbdbdb"}
+            borderBottom={isMedia ? "1px solid white" : "1px solid #dbdbdb"}
           >
             <Text textAlign={"center"}>Media</Text>
           </Box>
