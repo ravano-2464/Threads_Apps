@@ -1,74 +1,81 @@
-import { useRegister } from '../hooks/useRegister'
-import { FormControl, Input, Text, Button, Box } from '@chakra-ui/react'
+import { useRegister } from '../hooks/useRegister';
+import { FormControl, Input, Text, Button, Box, VStack } from '@chakra-ui/react';
 
 export default function FormRegister() {
-  const { form, handleChange, handleRegister } = useRegister()
+  const { form, handleChange, handleRegister } = useRegister();
 
   return (
-    <FormControl
-      isRequired
-      width={"350px"}
-      borderRadius={10}
-      padding={5}
-      boxShadow={"0 0px 6px rgba(50, 50, 93, 0.5), 0 1px 3px rgba(0, 0, 0, 0.08)"} 
+    <Box
+      bg="#1d1d1d"
+      h="100vh"
+      w="100vw"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
     >
-      <Text 
-        color={"green"} 
-        fontSize={"2xl"} 
-        fontWeight={"bold"}
-        textAlign={"center"}
-        mb={6}
-        >
-        REGISTER
-      </Text>
-      <Box
-        display={"flex"}
-        flexDirection={"column"}
-        gap={3}
-      >
-        <Input 
-          border={"2px solid #d3d3d3"}
-          fontSize={"sm"}
-          placeholder="First name" 
-          name="full_name" 
-          onChange={handleChange}
-          value={form.full_name}
-        />
-        <Input 
-          border={"2px solid #d3d3d3"}
-          fontSize={"sm"}
-          placeholder="Username" 
-          name="username" 
-          onChange={handleChange}
-          value={form.username}
-        />
-        <Input 
-          border={"2px solid #d3d3d3"}
-          fontSize={"sm"}
-          placeholder="Email" 
-          name="email" 
-          onChange={handleChange}
-          value={form.email}
-        />
-        <Input 
-          type="password" 
-          border={"2px solid #d3d3d3"}
-          fontSize={"sm"}
-          placeholder="Password" 
-          name="password" 
-          onChange={handleChange}
-          value={form.password}
-        />
-        <Button 
-          backgroundColor={"green"} 
-          colorScheme="green" 
-          color={"white"} 
-          onClick={handleRegister}
-          mt={3}
-        >
-          Create Account
-        </Button>
-      </Box>      
-    </FormControl>
-  )
+      <Box maxW="md" mx="auto" w="50%" p={6}>
+        <VStack spacing={4} align="stretch">
+          <Text as="b" fontSize="3xl" color="#04A51E">
+            Circle
+          </Text>
+          <Text as="b" fontSize="3xl" color="#ffffff">
+            Create account circle
+          </Text>
+          <form onSubmit={handleRegister}>
+            <FormControl>
+            <Input 
+               border={"2px solid #d3d3d3"}
+               fontSize={"sm"}
+               placeholder="Full Name *" 
+               name="full_name" 
+               color={'white'}
+               value={form.full_name}
+               onChange={handleChange}
+              />
+              <Input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Username *"
+                color={'white'}
+                value={form.username}
+                onChange={handleChange}
+              />
+              <Input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email *"
+                color={'white'}
+                value={form.email}
+                onChange={handleChange}
+              />
+              <Input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password *"
+                color={'white'}
+                value={form.password}
+                onChange={handleChange}
+              />
+            <Button
+              type="submit"
+              colorScheme="teal"
+              color="#ffffff"
+              py={5}
+              mt={4}
+              size="xs"
+              w="100%"
+              bg="#04A51E"
+              borderRadius="10px"
+            >
+              Create Account
+            </Button>
+            </FormControl>
+          </form>
+        </VStack>
+      </Box>
+    </Box>
+  );
 }
