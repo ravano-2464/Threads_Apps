@@ -82,13 +82,13 @@ export default function Home() {
                   style={{
                     height: "50px",
                     width: "50px",
+                    color: "green",
                   }}
                 />
               </Button>
               <Input
                 type="file"
                 name="image"
-                color={"white"}
                 onChange={handleChange}
                 style={{ display: "none" }}
                 ref={fileInputRef}
@@ -113,7 +113,7 @@ export default function Home() {
         <Box>
           {getThreads?.map((item) => {
             return (
-              <Box key={item.id}>
+              <Box key={item.id} color={"white"}>
                 <ThreadCard
                   id={item.id}
                   users={item?.users}
