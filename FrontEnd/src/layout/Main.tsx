@@ -31,14 +31,14 @@ export default function Main({ children }: { children: ReactNode }) {
       alignItems={"center"}
       w={"full"}
       position={"absolute"}
-      style={{ backgroundColor: "#1d1d1d" }} 
+      style={{ backgroundColor: "#1d1d1d" , width: "100vw" }}
     >
       <Spinner color="green.500" marginTop={"150px"} />
       <Text mt={2} color="white">Please wait...</Text>
     </Box>
   ) : (
     <>
-      <Box height={"100vh"} overflowY={"scroll"} style={{ backgroundColor: "#1d1d1d" }}>
+      <Box height={"100vh"} overflowY={"scroll"} style={{ backgroundColor: "#1d1d1d" , width: "100vw" }}>
         <Box
           display={"flex"}
           width={"320px"}
@@ -53,6 +53,7 @@ export default function Main({ children }: { children: ReactNode }) {
             display={"flex"}
             flexDirection={"column"}
             justifyContent={"space-between"}
+            style={{ backgroundColor: "#1d1d1d" }}
           >
             <Navbar />
 

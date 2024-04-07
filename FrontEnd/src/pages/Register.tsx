@@ -21,11 +21,11 @@ export default function Register() {
         flexDirection={"column"}
         justifyContent={"center"}
         alignItems={"center"}
-        marginTop={"150px"}
-        style={{ backgroundColor: "#1d1d1d" }} 
+        style={{ backgroundColor: "#1d1d1d" }}
+        height={"550px"}
       >
         <Spinner color='green.500' />
-        <Text mt={2}>Please wait...</Text>
+        <Text mt={2} color='white'>Please wait...</Text>
       </Box>
     ) : (
       <Box
@@ -33,10 +33,10 @@ export default function Register() {
         flexDirection={"column"}
         justifyContent={"center"}
         alignItems={"center"}
-        marginTop={"100px"}
+        style={{ backgroundColor: "#1d1d1d" }}
       >
         <FormRegister />
-        <Box display={"flex"} gap={2} mt={4}>
+        <Box display={"flex"} gap={2} mt={4} color={"white"}>
           <Text>Already have account?</Text>
           <Text 
             color={"green"} 
