@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "author_picture": "https://img.freepik.com/free-photo/portrait-young-asia-lady-with-positive-expression-arms-crossed-smile-broadly-dressed-casual-clothing-looking-camera-pink-background_7861-3201.jpg?w=1380&t=st=1698046122~exp=1698046722~hmac=b5713ace54fcba1bad4945463a6cf18208fbed68c8af9d58be14e09abb40bdda",
+    "author_name": "Rebbecca Eltra",
+    "author_username": "@rebbecca",
+    "posted_at": "4h",
+    "content": "Kalian pernah ga sih merasa hidup itu bahagia banget",
+    "image": "https://img.freepik.com/free-photo/portrait-young-asia-lady-with-positive-expression-arms-crossed-smile-broadly-dressed-casual-clothing-looking-camera-pink-background_7861-3201.jpg?w=1380&t=st=1698046122~exp=1698046722~hmac=b5713ace54fcba1bad4945463a6cf18208fbed68c8af9d58be14e09abb40bdda",
+    "likes_count": 10,
+    "replies_count": 5,
+    "is_liked": false
+  },
+  {
+    "id": 2,
+    "author_picture": "https://img.freepik.com/free-photo/portrait-young-asia-lady-with-positive-expression-arms-crossed-smile-broadly-dressed-casual-clothing-looking-camera-pink-background_7861-3201.jpg?w=1380&t=st=1698046122~exp=1698046722~hmac=b5713ace54fcba1bad4945463a6cf18208fbed68c8af9d58be14e09abb40bdda",
+    "author_name": "Indah Pra Karya",
+    "author_username": "@indahpra",
+    "posted_at": "4h",
+    "content": "Aku ingin menjadi power rangers",
+    "image": "https://img.freepik.com/free-photo/portrait-young-asia-lady-with-positive-expression-arms-crossed-smile-broadly-dressed-casual-clothing-looking-camera-pink-background_7861-3201.jpg?w=1380&t=st=1698046122~exp=1698046722~hmac=b5713ace54fcba1bad4945463a6cf18208fbed68c8af9d58be14e09abb40bdda",
+    "likes_count": 10,
+    "replies_count": 5,
+    "is_liked": true
+  },
+  {
+    "id": 3,
+    "author_picture": "https://img.freepik.com/free-photo/portrait-young-asia-lady-with-positive-expression-arms-crossed-smile-broadly-dressed-casual-clothing-looking-camera-pink-background_7861-3201.jpg?w=1380&t=st=1698046122~exp=1698046722~hmac=b5713ace54fcba1bad4945463a6cf18208fbed68c8af9d58be14e09abb40bdda",
+    "author_name": "Ayu miswari",
+    "author_username": "@ayum123",
+    "posted_at": "4h",
+    "content": "Salfok sama orang bisa ngethread",
+    "image": "https://img.freepik.com/free-photo/portrait-young-asia-lady-with-positive-expression-arms-crossed-smile-broadly-dressed-casual-clothing-looking-camera-pink-background_7861-3201.jpg?w=1380&t=st=1698046122~exp=1698046722~hmac=b5713ace54fcba1bad4945463a6cf18208fbed68c8af9d58be14e09abb40bdda",
+    "likes_count": 10,
+    "replies_count": 5,
+    "is_liked": true
+  }
+]
