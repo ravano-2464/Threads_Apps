@@ -22,6 +22,7 @@ export default function Register() {
         justifyContent={"center"}
         alignItems={"center"}
         marginTop={"150px"}
+        style={{ backgroundColor: "black" }} 
       >
         <Spinner color='green.500' />
         <Text mt={2}>Please wait...</Text>

@@ -31,13 +31,14 @@ export default function Main({ children }: { children: ReactNode }) {
       alignItems={"center"}
       w={"full"}
       position={"absolute"}
+      style={{ backgroundColor: "black" }} 
     >
       <Spinner color="green.500" marginTop={"150px"} />
-      <Text mt={2}>Please wait...</Text>
+      <Text mt={2} color="white">Please wait...</Text>
     </Box>
   ) : (
     <>
-      <Box height={"100vh"} overflowY={"scroll"}>
+      <Box height={"100vh"} overflowY={"scroll"} style={{ backgroundColor: "black" }}>
         <Box
           display={"flex"}
           width={"320px"}
@@ -45,7 +46,6 @@ export default function Main({ children }: { children: ReactNode }) {
           position={"fixed"}
           left={"20px"}
           paddingRight={"30px"}
-          borderRight={"1px solid #d3d3d3"}
           h={"100vh"}
         >
           <Box
@@ -66,6 +66,7 @@ export default function Main({ children }: { children: ReactNode }) {
                 display={"flex"}
                 alignItems={"center"}
                 gap={2}
+                color="white"
               >
                 <AiOutlineExport />
                 Logout
@@ -87,7 +88,6 @@ export default function Main({ children }: { children: ReactNode }) {
           top={"0px"}
           paddingTop={"10px"}
           paddingLeft={"35px"}
-          borderLeft={"1px solid #d3d3d3"}
           h={"100vh"}
         >
           <Box>
