@@ -36,7 +36,7 @@ export const SuggestedFollow = (): React.JSX.Element => {
                     ? item.image
                     : "https://www.greenscene.co.id/wp-content/uploads/2020/11/goku-ultra.jpg"
                 }
-                border={"2px solid black"}
+                border={"2px solid #1d1d1d"}
                 size={"sm"}
               />
               <Box

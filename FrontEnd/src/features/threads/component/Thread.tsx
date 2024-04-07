@@ -68,7 +68,7 @@ export const ThreadCard = (props: IThreadCard): React.JSX.Element => {
               alignItems={"center"}
               backgroundColor={"transparent"}
               cursor={"pointer"}
-              color={props.is_liked ? "red" : "black"}
+              color={props.is_liked ? "red" : "#1d1d1d"}
               onClick={() => handleIsLike(props.id, props?.is_liked)}
               gap={1}
               _hover={{ color: "gray" }}

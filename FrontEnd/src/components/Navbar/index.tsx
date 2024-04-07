@@ -96,7 +96,7 @@ export function Navbar() {
   const auth = useSelector((root: RootState) => root.auth)
 
   const isActive = (path: string) => {
-    return pathname === path ? "white" : "black";
+    return pathname === path ? "white" : "#1d1d1d";
   }
 
   return (

@@ -31,14 +31,14 @@ export default function Main({ children }: { children: ReactNode }) {
       alignItems={"center"}
       w={"full"}
       position={"absolute"}
-      style={{ backgroundColor: "black" }} 
+      style={{ backgroundColor: "#1d1d1d" }} 
     >
       <Spinner color="green.500" marginTop={"150px"} />
       <Text mt={2} color="white">Please wait...</Text>
     </Box>
   ) : (
     <>
-      <Box height={"100vh"} overflowY={"scroll"} style={{ backgroundColor: "black" }}>
+      <Box height={"100vh"} overflowY={"scroll"} style={{ backgroundColor: "#1d1d1d" }}>
         <Box
           display={"flex"}
           width={"320px"}
