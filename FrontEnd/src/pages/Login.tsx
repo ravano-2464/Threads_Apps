@@ -21,8 +21,8 @@ export default function Login() {
         flexDirection={"column"}
         justifyContent={"center"}
         alignItems={"center"}
-        marginTop={"150px"}
-        style={{ backgroundColor: "#1d1d1d" , width: "100vw" }}
+        style={{ backgroundColor: "#1d1d1d" }}
+        height={"550px"}
       >
         <Spinner color='green.500' />
         <Text mt={2} color='white'>Please wait...</Text>
