@@ -33,11 +33,11 @@ export default function Login() {
         flexDirection={"column"}
         justifyContent={"center"}
         alignItems={"center"}
-        marginTop={"100px"}
         style={{ backgroundColor: "#1d1d1d" }}
+        height={"700px"}
       >
         <FormLogin />
-        <Box display={"flex"} gap={2} mt={4} color={"white"}>
+        <Box display={"flex"} gap={2} mt={4} color={"white"} >
           <Text>Don't have an account yet ?</Text>
           <Text color={"green"} cursor={"pointer"} onClick={() => navigate("/auth/register")}>
             Create account

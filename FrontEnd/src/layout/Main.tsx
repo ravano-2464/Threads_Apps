@@ -32,6 +32,7 @@ export default function Main({ children }: { children: ReactNode }) {
       w={"full"}
       position={"absolute"}
       style={{ backgroundColor: "#1d1d1d" }}
+      height={"550px"}
     >
       <Spinner color="green.500" />
       <Text mt={2} color="white">Please wait...</Text>

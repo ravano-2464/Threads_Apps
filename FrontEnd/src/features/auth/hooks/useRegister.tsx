@@ -4,14 +4,14 @@ import { IUserRegister } from "@/types/User";
 import { API } from "@/libs/api";
 
 export function useRegister() {
-  const navigate: any = useNavigate();
+  const navigate: any = useNavigate()
   
   const [form, setForm] = useState<IUserRegister>({
     full_name: "",
     username: "",
     email: "",
     password: ""
-  });
+  })
 
   function handleChange(event: ChangeEvent<HTMLInputElement>) {
     setForm({
@@ -22,14 +22,12 @@ export function useRegister() {
 
   async function handleRegister() {
     try {
-      await API.post('/auth/register', form);
-      navigate("/auth/login");
+      await API.post('/auth/register', form)
+      navigate("/auth/login")
     } catch (error) {
-      throw new Error;
+      throw new Error
     }
   }
 
-  const style = { backgroundColor: "#1d1d1d" };
-
-  return { form, handleChange, handleRegister, style };
+  return { form, handleChange, handleRegister };
 }
