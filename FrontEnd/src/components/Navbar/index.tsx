@@ -117,7 +117,7 @@ export function Navbar() {
         fontWeight={pathname === "/" ? "bold" : "normal"}
       >
         <FontAwesomeIcon icon={faHome} color="white" />
-        <Link to="/" color="white">Home</Link>
+        <Link to="/" style={{ color: "white" }}>Home</Link>
       </Box>
       
       <Box 
@@ -128,9 +128,10 @@ export function Navbar() {
         _hover={{textDecoration: "underline"}} 
         fontSize={"xl"}
         color={isActive("/search")}
+        fontWeight={pathname === "/search" ? "bold" : "normal"}
         >
         <FontAwesomeIcon icon={faSearch} color="white" />
-        <Link to="/search" color="white">Search</Link>
+        <Link to="/search" style={{ color: "white" }}>Search</Link>
       </Box>
 
       <Box 
@@ -140,9 +141,10 @@ export function Navbar() {
         gap={2}
         _hover={{textDecoration: "underline"}} 
         fontSize={"xl"}
+        fontWeight={pathname === "/follow" ? "bold" : "normal"}
         color={isActive("/follow")}>
         <FontAwesomeIcon icon={faHeart} color="white" />
-        <Link to="/follow" color="white">Follow</Link>
+        <Link to="/follow" style={{ color: "white" }}>Follow</Link>
       </Box>
 
       <Box 
@@ -152,9 +154,10 @@ export function Navbar() {
         gap={2}
         _hover={{textDecoration: "underline"}} 
         fontSize={"xl"}
+        fontWeight={pathname === "/profile" ? "bold" : "normal"}
         color={isActive(`/profile/${auth.id}`)}>
         <FontAwesomeIcon icon={faUser} color="white" />
-        <Link to={`/profile/${auth.id}`} color="white">Profile</Link>
+        <Link to={`/profile/${auth.id}`} style={{ color: "white" }}>Profile</Link>
       </Box>
 
       <Button
