@@ -12,6 +12,7 @@ export type IThreadCard = {
   posted_at?: string;
   content?: string;
   image?: string;
+  likes?: string;
   likes_count?: number;
   replies_count?: number;
   replies?: Reply[];

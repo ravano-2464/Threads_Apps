@@ -30,7 +30,7 @@ export default function EditProfileModal(props: any) {
       onClose={props.onClose}
     >
       <ModalOverlay />
-      <ModalContent>
+      <ModalContent backgroundColor="black"> 
         <ModalHeader>Edit Profile</ModalHeader>
         <ModalCloseButton />
         <ModalBody pb={6}>
@@ -45,7 +45,7 @@ export default function EditProfileModal(props: any) {
                   ? form?.image
                   : ""
               }
-              alt="image-profile"
+              alt="Images"
               objectFit={"cover"}
             />
           </Box>
@@ -78,9 +78,10 @@ export default function EditProfileModal(props: any) {
             />
           </FormControl>
 
-          <FormControl mt={4}>
+          <FormControl mt={4} color={"white"}>
             <FormLabel>Full Name</FormLabel>
             <Input
+              color={"white"}
               ref={initialRef}
               defaultValue={form?.full_name}
               placeholder="First name"
@@ -89,9 +90,10 @@ export default function EditProfileModal(props: any) {
             />
           </FormControl>
 
-          <FormControl mt={4}>
+          <FormControl mt={4} color={"white"}>
             <FormLabel>Username</FormLabel>
             <Input
+              color={"white"}
               ref={initialRef}
               defaultValue={form?.username}
               placeholder="username"
@@ -100,9 +102,10 @@ export default function EditProfileModal(props: any) {
             />
           </FormControl>
 
-          <FormControl mt={4}>
+          <FormControl mt={4} color={"white"}>
             <FormLabel>Description</FormLabel>
             <Input
+              color={"white"}
               ref={initialRef}
               defaultValue={form?.description}
               placeholder="description"

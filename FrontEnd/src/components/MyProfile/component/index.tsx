@@ -65,7 +65,6 @@ export function MyProfile() {
                   : "https://www.greenscene.co.id/wp-content/uploads/2020/11/goku-ultra.jpg"
               }
               position={"absolute"}
-              border={"2px solid gray"}
               width={"50px"}
               height={"50px"}
               style={{ top: "85px", left: "40px" }}
