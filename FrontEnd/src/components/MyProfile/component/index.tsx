@@ -48,7 +48,7 @@ export function MyProfile() {
           boxShadow={"0 0px 6px rgba(0, 0, 0, 0.5)"}
           padding={5}
         >
-          <Text fontWeight={"bold"} color={'white'}>My Profile</Text>
+          <Text fontWeight={"bold"} color={"white"}>My Profile</Text>
           <Box>
             <Image
               src="https://images.pexels.com/photos/6985001/pexels-photo-6985001.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-6985001.jpg&fm=jpg"
@@ -78,27 +78,27 @@ export function MyProfile() {
               borderColor={"gray"}
               style={{ top: "120px", right: "20px" }}
               onClick={() => navigate(`/profile/${auth?.id}`)}
-              color={'white'}
+              color={"white"}
             >
               Edit Profile
             </Button>
           </Box>
           <CardBody p={0} mt={6}>
-            <Text fontWeight={"bold"} fontSize={"md"}>
+            <Text fontWeight={"bold"} fontSize={"md"} color={"white"}>
               {auth?.full_name}
             </Text>
-            <Text fontSize={"xs"} color={"gray"}>
+            <Text fontSize={"xs"} color={"white"}>
               @{auth?.username}
             </Text>
-            <Text>
+            <Text color={"white"}>
               {auth?.description ? auth?.description : "Set your description"}
             </Text>
             <Box display={"flex"} gap={3}>
-              <Box display={"flex"} gap={2} fontSize={"xs"}>
+              <Box display={"flex"} gap={2} fontSize={"xs"} color={"white"}>
                 <Text fontWeight={"bold"}>{countFollow.followings}</Text>
                 <Text>Following</Text>
               </Box>
-              <Box display={"flex"} gap={2} fontSize={"xs"}>
+              <Box display={"flex"} gap={2} fontSize={"xs"} color={"white"}>
                 <Text fontWeight={"bold"}>{countFollow.followers}</Text>
                 <Text>Followers</Text>
               </Box>

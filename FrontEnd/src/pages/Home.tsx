@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <Box w={660} ms={-2} >
-      <Text ms={5} fontSize={"2xl"} fontWeight={"bold"} mt={5}>Home</Text>
+      <Text ms={5} fontSize={"2xl"} fontWeight={"bold"} mt={5} color={"white"}>Home</Text>
 
       <Box
         display={"flex"}

@@ -16,7 +16,7 @@ export const SuggestedFollow = (): React.JSX.Element => {
         boxShadow={"0 0 6px rgba(0, 0, 0, 0.5)"}
         padding={5}
       >
-        <Text fontWeight={"bold"} mb={1} color={'white'}>
+        <Text fontWeight={"bold"} mb={1} color={"white"}>
           Suggested for You
         </Text>
         {suggestFollow?.map((item: any) => {

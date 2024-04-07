@@ -28,7 +28,7 @@ export default function FormRegister() {
                fontSize={"sm"}
                placeholder="Full Name *" 
                name="full_name" 
-               color={'white'}
+               color={"white"}
                value={form.full_name}
                onChange={handleChange}
               />
@@ -37,7 +37,7 @@ export default function FormRegister() {
                 id="username"
                 name="username"
                 placeholder="Username *"
-                color={'white'}
+                color={"white"}
                 value={form.username}
                 onChange={handleChange}
               />
@@ -46,7 +46,7 @@ export default function FormRegister() {
                 id="email"
                 name="email"
                 placeholder="Email *"
-                color={'white'}
+                color={"white"}
                 value={form.email}
                 onChange={handleChange}
               />
@@ -55,7 +55,7 @@ export default function FormRegister() {
                 id="password"
                 name="password"
                 placeholder="Password *"
-                color={'white'}
+                color={"white"}
                 value={form.password}
                 onChange={handleChange}
               />

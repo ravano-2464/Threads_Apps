@@ -127,7 +127,7 @@ export default function Profile() {
         </Box>
 
         <Box>
-          <Text fontWeight={"bold"} fontSize={"2xl"} color={'white'}>
+          <Text fontWeight={"bold"} fontSize={"2xl"} color={"white"}>
             {auth?.full_name}
           </Text>
           <Text color={"white"} fontSize={"sm"}>
@@ -141,11 +141,11 @@ export default function Profile() {
 
           <Box display={"flex"} gap={5} mt={1}>
             <Box display={"flex"} gap={2} fontSize={"sm"}>
-              <Text fontWeight={"bold"} color={'white'}>{0}</Text>
+              <Text fontWeight={"bold"} color={"white"}>{0}</Text>
               <Text>Following</Text>
             </Box>
             <Box display={"flex"} gap={2} fontSize={"sm"}>
-              <Text fontWeight={"bold"} color={'white'}>{0}</Text>
+              <Text fontWeight={"bold"} color={"white"}>{0}</Text>
               <Text>Followers</Text>
             </Box>
           </Box>
