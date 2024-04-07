@@ -48,7 +48,7 @@ export function MyProfile() {
           boxShadow={"0 0px 6px rgba(0, 0, 0, 0.5)"}
           padding={5}
         >
-          <Text fontWeight={"bold"}>My Profile</Text>
+          <Text fontWeight={"bold"} color={'white'}>My Profile</Text>
           <Box>
             <Image
               src="https://images.pexels.com/photos/6985001/pexels-photo-6985001.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-6985001.jpg&fm=jpg"
@@ -62,7 +62,7 @@ export function MyProfile() {
               src={
                 typeof auth?.image === "string"
                   ? auth?.image
-                  : "https://static1.personality-database.com/profile_images/4b05b8222e1f47d1b721ebe0800c9169.png"
+                  : "https://www.greenscene.co.id/wp-content/uploads/2020/11/goku-ultra.jpg"
               }
               position={"absolute"}
               border={"2px solid gray"}
@@ -78,6 +78,7 @@ export function MyProfile() {
               borderColor={"gray"}
               style={{ top: "120px", right: "20px" }}
               onClick={() => navigate(`/profile/${auth?.id}`)}
+              color={'white'}
             >
               Edit Profile
             </Button>

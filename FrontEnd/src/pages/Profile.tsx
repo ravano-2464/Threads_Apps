@@ -101,7 +101,7 @@ export default function Profile() {
             src={
               typeof auth?.image === "string"
                 ? auth?.image
-                : "https://static1.personality-database.com/profile_images/4b05b8222e1f47d1b721ebe0800c9169.png"
+                : "https://www.greenscene.co.id/wp-content/uploads/2020/11/goku-ultra.jpg"
             }
             border={"4px solid white"}
             width={"80px"}

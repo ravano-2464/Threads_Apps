@@ -50,7 +50,7 @@ export default function Home() {
           paddingBottom={"15px"}
         >
           <Box me={4}>
-            <Avatar src={typeof auth?.image === "string" ? auth?.image : "https://i.pinimg.com/564x/bc/c6/e1/bcc6e12a3bef4190e0f8f1a14885c321.jpg" } />
+            <Avatar src={typeof auth?.image === "string" ? auth?.image : "https://cdn.motor1.com/images/mgl/VzMq0z/s3/bugatti-chiron-1500.jpg" } />
           </Box>
 
           <FormControl

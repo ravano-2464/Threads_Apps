@@ -22,7 +22,7 @@ export const ThreadCard = (props: IThreadCard): React.JSX.Element => {
           src={
             typeof props.users?.image === "string"
               ? props.users?.image
-              : "https://i.pinimg.com/564x/bc/c6/e1/bcc6e12a3bef4190e0f8f1a14885c321.jpg"
+              : "https://cdn.motor1.com/images/mgl/VzMq0z/s3/bugatti-chiron-1500.jpg"
           }
           width={"50px"}
           height={"50px"}
