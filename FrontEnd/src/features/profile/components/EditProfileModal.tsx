@@ -30,7 +30,7 @@ export default function EditProfileModal(props: any) {
       onClose={props.onClose}
     >
       <ModalOverlay />
-      <ModalContent backgroundColor="black"> 
+      <ModalContent backgroundColor="#1d1d1d"> 
         <ModalHeader color={"white"}>Edit Profile</ModalHeader>
         <ModalCloseButton />
         <ModalBody pb={6}>
