@@ -1,5 +1,5 @@
 import React, { KeyboardEvent } from 'react';
-import { FormControl, Input, Text, Button, Box } from "@chakra-ui/react";
+import { FormControl, Input, Text, Button, Box, Link } from "@chakra-ui/react";
 import { useLogin } from "../hooks/useLogin";
 
 const FormLogin = (): React.JSX.Element => {
@@ -16,29 +16,27 @@ const FormLogin = (): React.JSX.Element => {
       isRequired
       display="flex"
       flexDirection="column"
-      gap={3}
       width="350px"
       borderRadius={10}
       padding={5}
-      boxShadow="0 0px 6px rgba(50, 50, 93, 0.5), 0 1px 3px rgba(0, 0, 0, 0.08)"
     >
-      <Text
-        color="green"
-        fontSize="2xl"
-        fontWeight="bold"
-        textAlign="center"
-        mb={3}
-      >
-        LOGIN
-      </Text>
+      <Box mb={6}>
+        <Text fontSize="3xl" fontWeight="bold" color="green.500">
+          Circle
+        </Text>
+        <Text as="b" fontSize="3xl" color="#ffffff">
+          Login to Circle
+        </Text>
+      </Box>
       <Input
         border="2px solid #d3d3d3"
         fontSize="sm"
-        placeholder="Email"
+        placeholder="Email/Username"
         name="email"
         color="white"
         onChange={handleChange}
         onKeyDown={handleKeyPress}
+        mb={3}
       />
       <Input
         border="2px solid #d3d3d3"
@@ -49,15 +47,17 @@ const FormLogin = (): React.JSX.Element => {
         color="white"
         onChange={handleChange}
         onKeyDown={handleKeyPress}
+        mb={3}
       />
-      <Box display="flex" justifyContent="flex-end" fontSize="sm">
-        <Text>Forgot password?</Text>
+      <Box textAlign="right" fontSize="sm" mb={3}>
+        <Link color="white">Forgot password?</Link>
       </Box>
       <Button
-        backgroundColor="green"
-        colorScheme="green"
+        backgroundColor="green.500"
         color="white"
+        _hover={{ bg: "green.600" }}
         onClick={handleLogin}
+        mb={3}
       >
         Login
       </Button>
