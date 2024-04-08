@@ -134,7 +134,7 @@ export default function Profile() {
             @{auth?.username}
           </Text>
           {auth?.description ? (
-            <Text>{auth?.description}</Text>
+            <Text color={"white"} >{auth?.description}</Text>
           ) : (
             <Text color={"white"}>Set your description...</Text>
           )}
