@@ -31,11 +31,12 @@ export default function EditProfileModal(props: any) {
     >
       <ModalOverlay />
       <ModalContent backgroundColor="black"> 
-        <ModalHeader>Edit Profile</ModalHeader>
+        <ModalHeader color={"white"}>Edit Profile</ModalHeader>
         <ModalCloseButton />
         <ModalBody pb={6}>
           <Box>
             <Image
+              color={"white"}
               borderRadius="full"
               boxSize="100px"
               src={
