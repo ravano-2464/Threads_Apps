@@ -154,7 +154,7 @@ export function Navbar() {
         gap={2}
         _hover={{textDecoration: "underline"}} 
         fontSize={"xl"}
-        fontWeight={pathname === "/profile" ? "bold" : "normal"}
+        fontWeight={pathname === `/profile/${auth.id}` ? "bold" : "normal"}
         color={isActive(`/profile/${auth.id}`)}>
         <FontAwesomeIcon icon={faUser} color="white" />
         <Link to={`/profile/${auth.id}`} style={{ color: "white" }}>Profile</Link>
