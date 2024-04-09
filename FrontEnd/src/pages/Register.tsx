@@ -25,7 +25,7 @@ export default function Register() {
         height={"550px"}
       >
         <Spinner color='green.500' />
-        <Text mt={2} color='white'>Please wait...</Text>
+        <Text mt={2} color={"white"}>Please wait...</Text>
       </Box>
     ) : (
       <Box
@@ -34,10 +34,11 @@ export default function Register() {
         justifyContent={"center"}
         alignItems={"center"}
         style={{ backgroundColor: "#1d1d1d" }}
+        height={"550px"}
       >
         <FormRegister />
-        <Box display={"flex"} gap={2} mt={4} color={"white"}>
-          <Text>Already have account?</Text>
+        <Box display={"flex"} gap={2} mt={4}>
+          <Text color={"white"}>Already have account?</Text>
           <Text 
             color={"green"} 
             cursor={"pointer"}  

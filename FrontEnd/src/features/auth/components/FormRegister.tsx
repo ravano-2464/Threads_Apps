@@ -1,89 +1,73 @@
 import { useRegister } from '../hooks/useRegister';
-import { FormControl, Input, Text, Button, Box, VStack } from '@chakra-ui/react';
+import { FormControl, Input, Text, Button, Box } from '@chakra-ui/react';
 
 export default function FormRegister() {
   const { form, handleChange, handleRegister } = useRegister();
 
   return (
-    <Box
-      bg="#1d1d1d"
-      h="100vh"
-      w="100vw"
+    <FormControl
+      isRequired
+      width={"350px"}
       display="flex"
-      justifyContent="center"
-      alignItems="center"
+      flexDirection="column"
+      padding={5}
+      borderRadius={10}
+      style={{ backgroundColor: "#1d1d1d" }}
     >
-      <Box maxW="md" mx="auto" w="50%" p={6}>
-        <VStack spacing={4} align="stretch">
-          <Text as="b" fontSize="3xl" color="#04A51E">
-            Circle
-          </Text>
-          <Text as="b" fontSize="3xl" color="#ffffff">
-            Create account circle
-          </Text>
-          <form onSubmit={handleRegister}>
-            <VStack spacing={4}>
-              <FormControl>
-                <Input
-                  border={"2px solid #d3d3d3"}
-                  fontSize={"sm"}
-                  placeholder="Full Name *"
-                  name="full_name"
-                  color={"white"}
-                  value={form.full_name}
-                  onChange={handleChange}
-                />
-              </FormControl>
-              <FormControl>
-                <Input
-                  type="text"
-                  id="username"
-                  name="username"
-                  placeholder="Username *"
-                  color={"white"}
-                  value={form.username}
-                  onChange={handleChange}
-                />
-              </FormControl>
-              <FormControl>
-                <Input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email *"
-                  color={"white"}
-                  value={form.email}
-                  onChange={handleChange}
-                />
-              </FormControl>
-              <FormControl>
-                <Input
-                  type="password"
-                  id="password"
-                  name="password"
-                  placeholder="Password *"
-                  color={"white"}
-                  value={form.password}
-                  onChange={handleChange}
-                />
-              </FormControl>
-              <Button
-                type="submit"
-                colorScheme="teal"
-                color="#ffffff"
-                py={5}
-                mt={4}
-                size="xs"
-                w="100%"
-                bg="#04A51E"
-                borderRadius="10px"
-              >
-                Create Account
-              </Button>
-            </VStack>
-          </form>
-        </VStack>
+      <Box mb={6}>
+        <Text fontSize="3xl" fontWeight="bold" color="green">
+          Circle
+        </Text>
+        <Text as="b" fontSize="3xl" color="#ffffff">
+          Register for Circle
+        </Text>
       </Box>
-    </Box>
+      <Input 
+        border={"2px solid #d3d3d3"}
+        fontSize={"sm"}
+        placeholder="First name" 
+        name="full_name" 
+        onChange={handleChange}
+        value={form.full_name}
+        mb={3}
+      />
+      <Input 
+        border={"2px solid #d3d3d3"}
+        fontSize={"sm"}
+        placeholder="Username" 
+        name="username" 
+        onChange={handleChange}
+        value={form.username}
+        mb={3}
+      />
+      <Input 
+        border={"2px solid #d3d3d3"}
+        fontSize={"sm"}
+        placeholder="Email" 
+        name="email" 
+        onChange={handleChange}
+        value={form.email}
+        mb={3}
+      />
+      <Input 
+        type="password" 
+        border={"2px solid #d3d3d3"}
+        fontSize={"sm"}
+        placeholder="Password" 
+        name="password" 
+        onChange={handleChange}
+        value={form.password}
+        mb={3}
+      />
+      <Button
+        backgroundColor="green"
+        color="white"
+        _hover={{ bg: "green" }}
+        onClick={handleRegister}
+        mb={3}
+      >
+        Create 
+      </Button>
+    </FormControl>
   );
 }

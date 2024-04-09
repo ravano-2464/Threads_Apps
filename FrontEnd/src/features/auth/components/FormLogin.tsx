@@ -21,7 +21,7 @@ const FormLogin = (): React.JSX.Element => {
       padding={5}
     >
       <Box mb={6}>
-        <Text fontSize="3xl" fontWeight="bold" color="green.500">
+        <Text fontSize="3xl" fontWeight="bold" color="green">
           Circle
         </Text>
         <Text as="b" fontSize="3xl" color="#ffffff">
@@ -53,9 +53,9 @@ const FormLogin = (): React.JSX.Element => {
         <Link color="white">Forgot password?</Link>
       </Box>
       <Button
-        backgroundColor="green.500"
+        backgroundColor="green"
         color="white"
-        _hover={{ bg: "green.600" }}
+        _hover={{ bg: "green" }}
         onClick={handleLogin}
         mb={3}
       >
