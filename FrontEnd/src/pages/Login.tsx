@@ -24,8 +24,8 @@ export default function Login() {
         style={{ backgroundColor: "#1d1d1d" }}
         height={"550px"}
       >
-        <Spinner color='green.500' />
-        <Text mt={2} color='white'>Please wait...</Text>
+        <Spinner color='green' />
+        <Text mt={2} color={"white"}>Please wait...</Text>
       </Box>
     ) : (
       <Box
@@ -34,11 +34,11 @@ export default function Login() {
         justifyContent={"center"}
         alignItems={"center"}
         style={{ backgroundColor: "#1d1d1d" }}
-        height={"700px"}
+        height={"550px"}
       >
         <FormLogin />
-        <Box display={"flex"} gap={2} mt={4} color={"white"} >
-          <Text>Don't have an account yet ?</Text>
+        <Box display={"flex"} gap={2} mt={4}>
+          <Text color={"white"}>Don't have an account yet ?</Text>
           <Text color={"green"} cursor={"pointer"} onClick={() => navigate("/auth/register")}>
             Create account
           </Text>

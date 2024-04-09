@@ -25,6 +25,7 @@ export default function FormRegister() {
       <Input 
         border={"2px solid #d3d3d3"}
         fontSize={"sm"}
+        color="white"
         placeholder="First name" 
         name="full_name" 
         onChange={handleChange}
@@ -34,6 +35,7 @@ export default function FormRegister() {
       <Input 
         border={"2px solid #d3d3d3"}
         fontSize={"sm"}
+        color="white"
         placeholder="Username" 
         name="username" 
         onChange={handleChange}
@@ -43,6 +45,7 @@ export default function FormRegister() {
       <Input 
         border={"2px solid #d3d3d3"}
         fontSize={"sm"}
+        color="white"
         placeholder="Email" 
         name="email" 
         onChange={handleChange}
@@ -53,6 +56,7 @@ export default function FormRegister() {
         type="password" 
         border={"2px solid #d3d3d3"}
         fontSize={"sm"}
+        color="white"
         placeholder="Password" 
         name="password" 
         onChange={handleChange}
