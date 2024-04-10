@@ -22,7 +22,7 @@ export default function Register() {
         justifyContent={"center"}
         alignItems={"center"}
         style={{ backgroundColor: "#1d1d1d" }}
-        height={"550px"}
+        height={"750px"}
       >
         <Spinner color='green' />
         <Text mt={2} color={"white"}>Please wait...</Text>
@@ -34,7 +34,7 @@ export default function Register() {
         justifyContent={"center"}
         alignItems={"center"}
         style={{ backgroundColor: "#1d1d1d" }}
-        height={"550px"}
+        height={"750px"}
       >
         <FormRegister />
         <Box display={"flex"} gap={2} mt={4}>
