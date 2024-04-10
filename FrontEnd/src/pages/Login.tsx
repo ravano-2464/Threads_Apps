@@ -21,7 +21,7 @@ export default function Login() {
         flexDirection={"column"}
         justifyContent={"center"}
         alignItems={"center"}
-        style={{ backgroundColor: "#1d1d1d" }}
+        style={{ backgroundColor: "#1d1d1d", height: "100vh", overflowY: "hidden" }}
         height={"750px"}
       >
         <Spinner color='green' />
@@ -33,7 +33,7 @@ export default function Login() {
         flexDirection={"column"}
         justifyContent={"center"}
         alignItems={"center"}
-        style={{ backgroundColor: "#1d1d1d" }}
+        style={{ backgroundColor: "#1d1d1d", height: "100vh", overflowY: "hidden"}}
         height={"750px"}
       >
         <FormLogin />

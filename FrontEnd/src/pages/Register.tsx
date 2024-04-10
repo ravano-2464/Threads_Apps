@@ -15,39 +15,33 @@ export default function Register() {
   }, []);
 
   return (
-    isLoading ? (
-      <Box
-        display={"flex"}
-        flexDirection={"column"}
-        justifyContent={"center"}
-        alignItems={"center"}
-        style={{ backgroundColor: "#1d1d1d" }}
-        height={"750px"}
-      >
-        <Spinner color='green' />
-        <Text mt={2} color={"white"}>Please wait...</Text>
-      </Box>
-    ) : (
-      <Box
-        display={"flex"}
-        flexDirection={"column"}
-        justifyContent={"center"}
-        alignItems={"center"}
-        style={{ backgroundColor: "#1d1d1d" }}
-        height={"750px"}
-      >
-        <FormRegister />
-        <Box display={"flex"} gap={2} mt={4}>
-          <Text color={"white"}>Already have account?</Text>
-          <Text 
-            color={"green"} 
-            cursor={"pointer"}  
-            onClick={() => navigate("/auth/login")}
-          >
-            Login
-          </Text>
-        </Box>
-      </Box>
-    )
-  )
+    <Box
+      display={"flex"}
+      flexDirection={"column"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      style={{ backgroundColor: "#1d1d1d", height: "100vh", overflowY: "hidden" }}
+    >
+      {isLoading ? (
+        <>
+          <Spinner color='green' />
+          <Text mt={2} color={"white"}>Please wait...</Text>
+        </>
+      ) : (
+        <>
+          <FormRegister />
+          <Box display={"flex"} gap={2} mt={4}>
+            <Text color={"white"}>Already have an account?</Text>
+            <Text 
+              color={"green"} 
+              cursor={"pointer"}  
+              onClick={() => navigate("/auth/login")}
+            >
+              Login
+            </Text>
+          </Box>
+        </>
+      )}
+    </Box>
+  );
 }
