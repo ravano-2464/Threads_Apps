@@ -1,8 +1,12 @@
 import React, { KeyboardEvent } from 'react';
 import { FormControl, Input, Text, Button, Box, Link } from "@chakra-ui/react";
 import { useLogin } from "../hooks/useLogin";
+import { useNavigate } from "react-router-dom";
 
 const FormLogin = (): React.JSX.Element => {
+
+  const navigate = useNavigate();
+
   const { handleChange, handleLogin } = useLogin();
 
   const handleKeyPress = (event: KeyboardEvent<HTMLInputElement>) => {
@@ -50,7 +54,9 @@ const FormLogin = (): React.JSX.Element => {
         mb={3}
       />
       <Box textAlign="right" fontSize="sm" mb={3}>
-        <Link color="white">Forgot password?</Link>
+      <Text color={"green"} cursor={"pointer"} onClick={() => navigate("/auth/forget")}>
+            Forgot Password?
+      </Text>
       </Box>
       <Button
         backgroundColor="green"

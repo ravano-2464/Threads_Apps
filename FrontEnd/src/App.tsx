@@ -15,6 +15,7 @@ import DetailThread from "./pages/DetailThread"
 import ListUser from "./pages/ListUser"
 import Profile from "./pages/Profile"
 import Follow from "./pages/Follow"
+import Forget from "./pages/Forget"
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true)
@@ -149,6 +150,7 @@ function App() {
             <Route path="/" element={<IsLogin />}>
               <Route path="/auth/register" element={ <Register />} />
               <Route path="/auth/login" element={<Login />} />
+              <Route path="/auth/forget" element={<Forget />} />
             </Route>
           </Routes>
         </ChakraProvider>
