@@ -63,6 +63,7 @@ export default function Profile() {
         position={"fixed"}
         left={"20px"}
         paddingRight={"30px"}
+        borderRight={"1px solid #d3d3d3"}
         h={"100vh"}
       >
         <Box width={"100%"} display={"flex"} flexDirection={"column"} gap={2}>
@@ -218,6 +219,7 @@ export default function Profile() {
         top={"0px"}
         paddingTop={"10px"}
         paddingLeft={"35px"}
+        borderLeft={"1px solid #d3d3d3"}
         h={"100vh"}
       >
         <Box mt={4}>
