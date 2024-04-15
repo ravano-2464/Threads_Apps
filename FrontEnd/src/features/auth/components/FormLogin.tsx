@@ -54,8 +54,8 @@ const FormLogin = (): React.JSX.Element => {
         mb={3}
       />
       <Box textAlign="right" fontSize="sm" mb={3}>
-      <Text color={"green"} cursor={"pointer"} onClick={() => navigate("/auth/forget")}>
-            Forgot Password?
+      <Text color={"white"} cursor={"pointer"} onClick={() => navigate("/auth/forget")}>
+          Forgot Password?
       </Text>
       </Box>
       <Button
