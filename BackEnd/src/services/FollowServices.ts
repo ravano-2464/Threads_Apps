@@ -133,6 +133,7 @@ class FollowsService {
   ): Promise<any> {
     try {
       let follows: Follow[];
+      
 
       if (queryType === "followings") {
         follows = await this.followRepository.find({
