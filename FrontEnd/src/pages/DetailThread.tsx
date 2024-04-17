@@ -60,6 +60,7 @@ export default function DetailThread() {
   return (
     <Box display={"flex"} justifyContent={"center"}>
       <Box
+        margin={4}
         display={"flex"}
         alignItems={"center"}
         flexDirection={"column"}

@@ -32,7 +32,7 @@ export default function Home() {
   }, [isLoading]);
 
   return (
-    <Box w={660} ms={-2} >
+    <Box w={560} ms={-2}>
       <Text ms={5} fontSize={"2xl"} fontWeight={"bold"} mt={5} color={"white"}>Home</Text>
 
       <Box
@@ -43,7 +43,7 @@ export default function Home() {
         borderColor={"brand.white"}
       >
         <Box
-          width={"100%"}
+          width={"575px"}
           paddingX={5}
           display={"flex"}
           alignItems={"center"}

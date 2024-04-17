@@ -46,7 +46,7 @@ export default function Main({ children }: { children: ReactNode }) {
           height={"fit-content"}
           position={"fixed"}
           left={"20px"}
-          paddingRight={"30px"}
+          paddingRight={"35px"}
           borderRight={"1px solid #d3d3d3"}
           h={"100vh"}
         >

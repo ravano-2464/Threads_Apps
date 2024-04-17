@@ -31,8 +31,8 @@ export default function ListUser() {
         alignItems={"center"}
         flexDirection={"column"}
         paddingY={"20px"}
-        width="620px"
-        marginLeft={"-10px"}
+        width="590px"
+        marginLeft={"20px"}
         borderColor={"brand.white"}
       >
         <InputGroup>

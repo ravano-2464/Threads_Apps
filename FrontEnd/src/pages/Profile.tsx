@@ -58,12 +58,12 @@ export default function Profile() {
     <Box backgroundColor="#1d1d1d" height={"100vh"} overflowY={"scroll"}>
       <Box
         display={"flex"}
-        width={"320px"}
+        width={"290px"}
         height={"fit-content"}
         position={"fixed"}
         left={"20px"}
-        paddingRight={"30px"}
         borderRight={"1px solid #d3d3d3"}
+        paddingRight={"-30px"}
         h={"100vh"}
       >
         <Box width={"100%"} display={"flex"} flexDirection={"column"} gap={2}>
@@ -218,7 +218,7 @@ export default function Profile() {
         right={"30px"}
         top={"0px"}
         paddingTop={"10px"}
-        paddingLeft={"35px"}
+        paddingLeft={"-30px"}
         borderLeft={"1px solid #d3d3d3"}
         h={"100vh"}
       >

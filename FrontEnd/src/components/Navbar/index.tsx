@@ -165,6 +165,7 @@ export function Navbar() {
         borderRadius={"30px"}
         color={"white"}
         marginTop={"30px"}
+        width="270px"
         colorScheme="green"
       >
         Create Post
