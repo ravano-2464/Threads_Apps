@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Footer, Navbar, SuggestedFollow } from "@/components";
 import { RootState } from "@/store/type/RootState";
 import {
@@ -22,9 +22,10 @@ export default function Profile() {
   const { id } = useParams();
   const navigate = useNavigate();
   const auth = useSelector((state: RootState) => state.auth);
-  const [isAllPost, setIsAllPost] = React.useState<boolean>(true);
-  const [isMedia, setIsMedia] = React.useState<boolean>(false);
-  const [threadByUser, setThreadByUser] = React.useState<any[]>();
+  const [countFollow, setCountFollow] = useState<{ followers: number; followings: number }>({ followers: 0, followings: 0 });
+  const [isAllPost, setIsAllPost] = useState<boolean>(true);
+  const [isMedia, setIsMedia] = useState<boolean>(false);
+  const [threadByUser, setThreadByUser] = useState<any[]>();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleAllPostChange = (): void => {
@@ -46,12 +47,26 @@ export default function Profile() {
     }
   };
 
-  const threadOnlyImg = threadByUser?.filter(
-    (data: any) => data.image !== null
-  );
+  const threadOnlyImg = threadByUser?.filter((data: any) => data.image !== null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     getThreadByUser();
+
+    async function fetchFollowCounts() {
+      try {
+        const sumFollowers = await API.get(`/follows?type=followers`);
+        const sumFollowings = await API.get(`/follows?type=followings`);
+
+        setCountFollow({
+          followers: sumFollowers.data.length,
+          followings: sumFollowings.data.length,
+        });
+      } catch (err) {
+        throw err;
+      }
+    }
+
+    fetchFollowCounts();
   }, []);
 
   return (
@@ -142,11 +157,11 @@ export default function Profile() {
 
           <Box display={"flex"} gap={5} mt={1}>
             <Box display={"flex"} gap={2} fontSize={"sm"}>
-              <Text fontWeight={"bold"} color={"white"}>{0}</Text>
+              <Text fontWeight={"bold"} color={"white"}>{countFollow.followings}</Text>
               <Text color={"white"}>Following</Text>
             </Box>
             <Box display={"flex"} gap={2} fontSize={"sm"}>
-              <Text fontWeight={"bold"} color={"white"}>{0}</Text>
+              <Text fontWeight={"bold"} color={"white"}>{countFollow.followers}</Text>
               <Text color={"white"}>Followers</Text>
             </Box>
           </Box>

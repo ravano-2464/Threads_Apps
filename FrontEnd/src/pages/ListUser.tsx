@@ -31,7 +31,7 @@ export default function ListUser() {
         alignItems={"center"}
         flexDirection={"column"}
         paddingY={"20px"}
-        width="590px"
+        width="535px"
         marginLeft={"20px"}
         borderColor={"brand.white"}
       >

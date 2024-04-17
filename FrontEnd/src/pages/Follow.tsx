@@ -60,7 +60,7 @@ export default function Follow() {
         flexDirection={"column"}
         paddingY={"20px"}
         width="550px"
-        marginLeft={"30px"}
+        marginLeft={"15px"}
         borderColor={"brand.white"}
       >
         <Text fontWeight={"bold"} fontSize={"xl"} mb={4} color={"white"}>
