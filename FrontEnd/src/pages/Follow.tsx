@@ -67,7 +67,7 @@ export default function Follow() {
           Follow
         </Text>
 
-        <Box display={"flex"} textAlign={"center"}>
+        <Box display={"flex"} textAlign={"center"} width={"563px"}>
           <Box onClick={handleActiveFollowers} w={"full"} cursor={"pointer"}>
             <Text
               w={"full"}

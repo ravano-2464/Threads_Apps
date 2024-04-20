@@ -174,6 +174,7 @@ export default function Profile() {
             cursor={"pointer"}
             pb={2}
             borderBottom={isAllPost ? "1px solid white" : "1px solid #dbdbdb"}
+            borderRight={"1px solid #dbdbdb"}
           >
             <Text textAlign={"center"} color={"white"}>All Post</Text>
           </Box>
