@@ -73,7 +73,7 @@ export default function DetailThread() {
           id={data?.id}
           users={data?.users}
           content={data?.content}
-          likes_count={data?.likes?.length}
+          likes_count={Array.isArray(data?.likes) ? data?.likes.length : 0}
           posted_at={data?.posted_at}
           replies_count={data?.replies_count}
           image={data?.image}
