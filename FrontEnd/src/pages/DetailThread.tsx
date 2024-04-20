@@ -122,7 +122,7 @@ export default function DetailThread() {
             >
               <Image
                 ms={6}
-                src={data.users?.picture ? data.users?.picture : "https://cdn.motor1.com/images/mgl/VzMq0z/s3/bugatti-chiron-1500.jpg"}
+                src={data.users?.picture ? data.users?.picture : "https://www.greenscene.co.id/wp-content/uploads/2020/11/goku-ultra.jpg"}
                 width={"50px"}
                 height={"50px"}
                 objectFit={"cover"}

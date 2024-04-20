@@ -86,7 +86,7 @@ export default function Profile() {
         </Box>
       </Box>
 
-      <Box w={650} mx={"auto"} px={4}>
+      <Box w={625} mx={"auto"} px={4}>
         <Box display={"inline-block"}>
           <Box
             display={"flex"}

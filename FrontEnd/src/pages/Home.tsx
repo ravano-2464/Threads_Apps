@@ -51,7 +51,7 @@ export default function Home() {
           paddingBottom={"15px"}
         >
           <Box me={4}>
-            <Avatar src={typeof auth?.image === "string" ? auth?.image : "https://cdn.motor1.com/images/mgl/VzMq0z/s3/bugatti-chiron-1500.jpg" } />
+            <Avatar src={typeof auth?.image === "string" ? auth?.image : "https://www.greenscene.co.id/wp-content/uploads/2020/11/goku-ultra.jpg" } />
           </Box>
 
           <FormControl
