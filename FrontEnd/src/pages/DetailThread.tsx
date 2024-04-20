@@ -60,13 +60,14 @@ export default function DetailThread() {
   return (
     <Box display={"flex"} justifyContent={"center"}>
       <Box
+        color={"white"}
         margin={4}
         display={"flex"}
         alignItems={"center"}
         flexDirection={"column"}
         paddingY={"20px"}
-        width="660px"
-        marginLeft={"-30px"}
+        width="575px"
+        marginLeft={"-20px"}
         borderColor={"brand.white"}
       >
         <ThreadCard
@@ -92,6 +93,7 @@ export default function DetailThread() {
                 gap={2}
               >
                 <Input
+                  color={"white"}
                   placeholder="What is happening?!"
                   name="content"
                   onChange={handleChange}
@@ -112,7 +114,7 @@ export default function DetailThread() {
             <Box 
               key={index}
               display={"flex"}
-              width="660px"
+              width="575px"
               borderBottom={"1px solid #d3d3d3"}
               padding={"20px 0px"}
               bg={"transparent"} 

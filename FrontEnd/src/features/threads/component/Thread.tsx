@@ -14,9 +14,9 @@ export const ThreadCard = (props: IThreadCard): React.JSX.Element => {
     <>
       <Box
         display={"flex"}
-        width="660px"
+        width="575px"
         borderBottom={"1px solid #d3d3d3"}
-        padding={"10px 20px"}
+        padding={"20px 20px"}
       >
         <Image
           src={
@@ -62,13 +62,13 @@ export const ThreadCard = (props: IThreadCard): React.JSX.Element => {
               marginRight={"20px"}
             />
           )}
-          <Box display={"flex"} gap={5} marginTop={"10px"}>
+          <Box display={"flex"} gap={5} marginTop={"10px"} color={"white"}>
             <Box
               display={"flex"}
               alignItems={"center"}
               backgroundColor={"transparent"}
               cursor={"pointer"}
-              color={props.is_liked ? "red" : "#1d1d1d"}
+              color={props.is_liked ? "red" : "white"}
               onClick={() => handleIsLike(props.id, props?.is_liked)}
               gap={1}
               _hover={{ color: "gray" }}

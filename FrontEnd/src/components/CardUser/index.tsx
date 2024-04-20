@@ -24,7 +24,7 @@ export default function CardUser(props: any) {
             ? props?.picture
             : "https://www.greenscene.co.id/wp-content/uploads/2020/11/goku-ultra.jpg"
         }
-        border={"2px solid #1d1d1d"}
+        border={"2px solid black"}
       />
       <Box
         display={"flex"}
@@ -33,12 +33,12 @@ export default function CardUser(props: any) {
         overflow={"hidden"}
       >
         <Text
+          color={"white"}
           fontSize={"sm"}
           fontWeight={"bold"}
           overflow={"hidden"}
           whiteSpace={"nowrap"}
           textOverflow={"ellipsis"}
-          color={"white"}
         >
           {props?.full_name}
         </Text>

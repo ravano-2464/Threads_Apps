@@ -58,11 +58,6 @@ export default new (class ThreadServices {
   }
 
   async create(reqBody: any, loginSession: any,): Promise<any> {
-    
-     
-
-    
-
 
       const thread = this.ThreadRepository.create({
         content: reqBody.content,

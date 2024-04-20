@@ -188,7 +188,7 @@ export default function Profile() {
           </Box>
         </Box>
 
-        <Box ms={-6}>
+        <Box ms={-6} color={"white"}>
           {isAllPost ? (
             threadByUser && threadByUser.length > 0 ? (
               threadByUser.map((data: any) => (

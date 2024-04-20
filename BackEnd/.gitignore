@@ -4,4 +4,5 @@ node_modules/
 build/
 tmp/
 temp/
-./uploads
+src/uploads/*.jpg
+src/uploads/*.png

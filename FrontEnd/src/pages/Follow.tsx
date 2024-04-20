@@ -59,7 +59,7 @@ export default function Follow() {
         display={"flex"}
         flexDirection={"column"}
         paddingY={"20px"}
-        width="550px"
+        width="575px"
         marginLeft={"15px"}
         borderColor={"brand.white"}
       >
