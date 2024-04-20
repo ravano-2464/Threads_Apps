@@ -55,7 +55,7 @@ export const ThreadCard = (props: IThreadCard): React.JSX.Element => {
           {props.image && (
             <Image
               mt={3}
-              src={props.image}
+              src={"http://localhost:5000/uploads/" + props.image}
               width={"80%"}
               height={"300px"}
               objectFit={"fill"}

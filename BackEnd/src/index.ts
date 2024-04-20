@@ -5,6 +5,7 @@ import { AppDataSource } from "./data-source"
 import CloudinaryConfig from "./libs/cloudinary"
 import router from './route'
 import "dotenv/config"
+import path = require('path')
 
 AppDataSource.initialize()
     .then(async () => {
@@ -16,6 +17,7 @@ AppDataSource.initialize()
         app.use(express.json())
         app.use("/api/v1", router) 
         app.use(express.static("public"));
+        app.use("/uploads",express.static(path.join(__dirname, "uploads")));
 
         app.use("/docs",
             swaggerUi.serve,

@@ -16,7 +16,7 @@ const UploadMiddleware = new FileUpload("image")
 router.get("/threads", AuthenticationMiddlewares.Authentication, ThreadControllers.find)
 router.get("/detail-thread/:id", AuthenticationMiddlewares.Authentication,  ThreadControllers.findOne)
 router.get("/thread/:id", AuthenticationMiddlewares.Authentication,  ThreadControllers.findOneByUserId)
-router.post("/thread", AuthenticationMiddlewares.Authentication, UploadMiddleware.handleUpload.bind(UploadMiddleware), ThreadQueue.create)
+router.post("/thread", AuthenticationMiddlewares.Authentication, UploadMiddleware.handleUpload.bind(UploadMiddleware), ThreadControllers.create)
 
 // AUTH 
 router.post("/auth/register", AuthControllers.register)

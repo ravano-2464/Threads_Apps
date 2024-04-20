@@ -44,6 +44,23 @@ export default new class ThreadControllers {
   }
   
   create(req: Request, res: Response) {
-    ThreadQueue.create(req, res)
+    // ThreadQueue.create(req, res)
+    try {
+      console.log(req.file,req.files,res.locals.filename);
+
+      if(res.locals.filename){
+        req.body.image = res.locals.filename
+      }
+
+      ThreadServices.create(req.body, res.locals.loginSession)
+
+      return res.status(200).json({
+        "message": "Thread created successfully"
+      });
+    } catch (err) {
+      return res
+        .status(500)
+        .json({ error: "Something went wrong on the server!" });
+    }
   }
 }

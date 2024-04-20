@@ -6,6 +6,8 @@ import {
   createThreadSchema,
   updateThreadSchema,
 } from "../utils/validator/Thread";
+import CloudinaryConfig from "../libs/cloudinary";
+
 
 export default new (class ThreadServices {
   private readonly ThreadRepository: Repository<Thread> =
@@ -53,6 +55,27 @@ export default new (class ThreadServices {
     } catch (err) {
       throw new Error("Something went wrong in server!");
     }
+  }
+
+  async create(reqBody: any, loginSession: any,): Promise<any> {
+    
+     
+
+    
+
+
+      const thread = this.ThreadRepository.create({
+        content: reqBody.content,
+        image: reqBody.image,
+        users: {
+          id: loginSession.user.id,
+        },
+      });
+
+      const response = await this.ThreadRepository.save(thread);
+
+      return response;
+    
   }
 
   async findOne(id: number): Promise<any[]> {
