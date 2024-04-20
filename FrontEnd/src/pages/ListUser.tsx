@@ -45,7 +45,7 @@ export default function ListUser() {
             placeholder="Search account ?"
             color={"white"}
             fontSize={"sm"}
-            border={"1px solid #d3d3d3"}
+            border={"1px solid #262626"}
             type="text"
             onChange={handleChangeFilter}
           />

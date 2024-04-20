@@ -47,7 +47,7 @@ export default function Main({ children }: { children: ReactNode }) {
           position={"fixed"}
           left={"20px"}
           paddingRight={"35px"}
-          borderRight={"1px solid #d3d3d3"}
+          borderRight={"1px solid #262626"}
           h={"100vh"}
         >
           <Box
@@ -91,7 +91,7 @@ export default function Main({ children }: { children: ReactNode }) {
           top={"0px"}
           paddingTop={"10px"}
           paddingLeft={"35px"}
-          borderLeft={"1px solid #d3d3d3"}
+          borderLeft={"1px solid #262626"}
           h={"100vh"}
         >
           <Box>

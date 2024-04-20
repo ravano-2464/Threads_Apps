@@ -77,7 +77,7 @@ export default function Profile() {
         height={"fit-content"}
         position={"fixed"}
         left={"20px"}
-        borderRight={"1px solid #d3d3d3"}
+        borderRight={"1px solid #262626"}
         paddingRight={"-30px"}
         h={"100vh"}
       >
@@ -234,7 +234,7 @@ export default function Profile() {
         top={"0px"}
         paddingTop={"10px"}
         paddingLeft={"-30px"}
-        borderLeft={"1px solid #d3d3d3"}
+        borderLeft={"1px solid #262626"}
         h={"100vh"}
       >
         <Box mt={4}>

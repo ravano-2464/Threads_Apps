@@ -39,7 +39,6 @@
 
 // ============================================================================================================
 
-
 import { Request, Response } from "express";
 import FollowsService from "../services/FollowServices";
 

@@ -15,7 +15,7 @@ export const ThreadCard = (props: IThreadCard): React.JSX.Element => {
       <Box
         display={"flex"}
         width="575px"
-        borderBottom={"1px solid #d3d3d3"}
+        borderBottom={"1px solid #262626"}
         padding={"20px 20px"}
       >
         <Image

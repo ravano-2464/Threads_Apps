@@ -18,7 +18,7 @@ export function Follows(props: IFollow) {
           alt="user_profile_image"
         />
 
-        <Box display={"flex"} width={"100%"}>
+        <Box display={"flex"} width={"90%"}>
           <Box display={"flex"} flexDirection={"column"}  flex={2}>
             <Box display={"flex"}>
               <Text fontWeight={'bold'}>{props.full_name}</Text>

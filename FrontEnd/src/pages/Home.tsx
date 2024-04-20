@@ -47,7 +47,7 @@ export default function Home() {
           paddingX={5}
           display={"flex"}
           alignItems={"center"}
-          borderBottom={"1px solid #d3d3d3"}
+          borderBottom={"1px solid #262626"}
           paddingBottom={"15px"}
         >
           <Box me={4}>
