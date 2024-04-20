@@ -24,7 +24,6 @@ export default function CardUser(props: any) {
             ? props?.picture
             : "https://www.greenscene.co.id/wp-content/uploads/2020/11/goku-ultra.jpg"
         }
-        border={"2px solid black"}
       />
       <Box
         display={"flex"}
