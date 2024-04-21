@@ -51,7 +51,7 @@ export function MyProfile() {
           <Text fontWeight={"bold"} color={"white"}>My Profile</Text>
           <Box>
             <Image
-              src="https://images.pexels.com/photos/6985001/pexels-photo-6985001.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-6985001.jpg&fm=jpg"
+              src="https://timelinecovers.pro/facebook-cover/download/system-failure-hacker-nearby-facebook-cover.jpg"
               objectFit={"cover"}
               mt={2}
               borderRadius={"10px"}

@@ -43,14 +43,14 @@ export default function Follow() {
 
   const handleActiveFollowers = async () => {
     dispatch(SET_FOLLOW_STATE("followers"));
-    setIsActiveFollowing(!isActiveFollowing);
-    setIsActiveFollowers(!isActiveFollowers);
+    setIsActiveFollowing(false);
+    setIsActiveFollowers(true);
   };
 
   const handleActiveFollowing = async () => {
     dispatch(SET_FOLLOW_STATE("followings"));
-    setIsActiveFollowing(!isActiveFollowing);
-    setIsActiveFollowers(!isActiveFollowers);
+    setIsActiveFollowing(true);
+    setIsActiveFollowers(false);
   };
 
   return (
@@ -74,7 +74,7 @@ export default function Follow() {
               fontSize={"md"}
               pb={2}
               color={"white"}
-              borderBottom={isActiveFollowers ? "1px solid white" : "1px solid #dbdbdb"}
+              borderBottom={isActiveFollowers ? "1px solid green" : "1px solid #dbdbdb"}
             >
               Followers
             </Text>
@@ -86,7 +86,7 @@ export default function Follow() {
               fontSize={"md"}
               pb={2}
               color={"white"}
-              borderBottom={isActiveFollowing ? "1px solid white" : "1px solid #dbdbdb"}
+              borderBottom={isActiveFollowing ? "1px solid green" : "1px solid #dbdbdb"}
             >
               Following
             </Text>
