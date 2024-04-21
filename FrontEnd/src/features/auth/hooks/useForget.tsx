@@ -8,7 +8,10 @@ export function useForget() {
 
   const [form, setForm] = useState({
     email: "",
+    password: "", 
   });
+
+  const [showPassword, setShowPassword] = useState(false); 
 
   const {
     isOpen: isVisible,
@@ -19,6 +22,10 @@ export function useForget() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
   };
 
   async function handleForget() {
@@ -34,6 +41,8 @@ export function useForget() {
   return {
     handleForget,
     handleChange,
+    togglePasswordVisibility,
+    showPassword, 
     isOpen: isVisible,
     onClose,
     onOpen,

@@ -66,7 +66,7 @@ export default function DetailThread() {
         alignItems={"center"}
         flexDirection={"column"}
         paddingY={"20px"}
-        width="575px"
+        width="550px"
         marginLeft={"-20px"}
         borderColor={"brand.white"}
       >
@@ -110,7 +110,7 @@ export default function DetailThread() {
             </FormControl>
           </form>
 
-          { getReply?.map((data: any, index: any) => (
+          {getReply?.map((data: any, index: any) => (
             <Box 
               key={index}
               display={"flex"}
