@@ -215,7 +215,7 @@ export default function Profile() {
             <Grid templateColumns="repeat(3, 1fr)" gap={1} mt={2} >
               {threadOnlyImg.map((data: any) => (
                 <GridItem w="100%" h="100%" border={"1px solid #dbdbdb"}>
-                  <Image key={data.id} src={data.image} alt="thread" w={"full"} h={"full"} />
+                  <Image key={data.id} src={"http://localhost:5000/uploads/" + data.image} alt="thread" w={"full"} h={"full"} />
                 </GridItem>
               ))}
             </Grid>
