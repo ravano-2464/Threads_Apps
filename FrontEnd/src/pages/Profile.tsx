@@ -131,6 +131,7 @@ export default function Profile() {
               borderRadius={"full"}
               size={"xs"}
               borderColor={"gray"}
+              bgColor={"gray"}
               mt={-5}
               paddingX={4}
               onClick={() => onOpen()}

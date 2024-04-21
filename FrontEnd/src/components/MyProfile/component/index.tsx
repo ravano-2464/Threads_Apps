@@ -74,7 +74,7 @@ export function MyProfile() {
               variant={"outline"}
               borderRadius={"full"}
               size={"xs"}
-              borderColor={"gray"}
+              _hover={{ bgColor: "gray" }}
               style={{ top: "120px", right: "20px" }}
               onClick={() => navigate(`/profile/${auth?.id}`)}
               color={"white"}
