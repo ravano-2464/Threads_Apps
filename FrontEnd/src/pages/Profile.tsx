@@ -238,11 +238,11 @@ export default function Profile() {
         borderLeft={"1px solid #262626"}
         h={"100vh"}
       >
-        <Box mt={4}>
+        <Box mt={4} paddingLeft={"10px"}>
           <SuggestedFollow />
         </Box>
 
-        <Box>
+        <Box paddingLeft={"10px"}>
           <Footer />
         </Box>
       </Box>

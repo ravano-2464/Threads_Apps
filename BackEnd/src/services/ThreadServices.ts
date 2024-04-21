@@ -8,7 +8,6 @@ import {
 } from "../utils/validator/Thread";
 import CloudinaryConfig from "../libs/cloudinary";
 
-
 export default new (class ThreadServices {
   private readonly ThreadRepository: Repository<Thread> =
     AppDataSource.getRepository(Thread);
