@@ -17,7 +17,6 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 import { ThreadCard } from "@/features/threads";
 import EditProfileModal from "@/features/profile/components/EditProfileModal";
 import { API } from "@/libs/api";
-import Main from "../src/layout/Main";
 
 export default function Profile() {
   const { id } = useParams();
