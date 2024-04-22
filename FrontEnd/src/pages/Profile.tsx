@@ -17,6 +17,7 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 import { ThreadCard } from "@/features/threads";
 import EditProfileModal from "@/features/profile/components/EditProfileModal";
 import { API } from "@/libs/api";
+import Main from "../src/layout/Main";
 
 export default function Profile() {
   const { id } = useParams();
@@ -118,7 +119,6 @@ export default function Profile() {
                 ? auth?.image
                 : "https://www.greenscene.co.id/wp-content/uploads/2020/11/goku-ultra.jpg"
             }
-            border={"4px solid white"}
             width={"80px"}
             height={"80px"}
             style={{ margin: "-45px 0 0 25px" }}

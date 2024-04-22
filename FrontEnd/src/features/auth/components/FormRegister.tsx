@@ -26,7 +26,7 @@ export default function FormRegister() {
         border={"2px solid #d3d3d3"}
         fontSize={"sm"}
         color="white"
-        placeholder="First name" 
+        placeholder="Full Name" 
         name="full_name" 
         onChange={handleChange}
         value={form.full_name}
@@ -58,6 +58,17 @@ export default function FormRegister() {
         fontSize={"sm"}
         color="white"
         placeholder="Password" 
+        name="password" 
+        onChange={handleChange}
+        value={form.password}
+        mb={3}
+      />
+      <Input 
+        type="password" 
+        border={"2px solid #d3d3d3"}
+        fontSize={"sm"}
+        color="white"
+        placeholder="Confirm Password" 
         name="password" 
         onChange={handleChange}
         value={form.password}

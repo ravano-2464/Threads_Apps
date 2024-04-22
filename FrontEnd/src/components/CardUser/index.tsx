@@ -54,7 +54,7 @@ export default function CardUser(props: any) {
         size={"sm"}
         variant={props.isFollowing ? "outline" : "solid"}
         colorScheme="green"
-        bg={props.isFollowing ? "black" : "white"}
+        bg={props.isFollowing ? "black" : "green"}
         px={5}
         borderRadius={"full"}
         onClick={() => mutationFollow.mutate(props.id)}
