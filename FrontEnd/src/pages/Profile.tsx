@@ -212,9 +212,11 @@ export default function Profile() {
           ) : threadOnlyImg && threadOnlyImg.length > 0 ? (
             <Grid templateColumns="repeat(3, 1fr)" gap={1} mt={2} >
               {threadOnlyImg.map((data: any) => (
-              <GridItem w="100%" h="100%" border={"1px solid #dbdbdb"}>
-                <Image key={data.id} src={`http://localhost:5000/uploads/${data?.image}`} alt="thread" w={"full"} h={"full"} />
-              </GridItem>              
+              data.image ? (
+                <GridItem w="100%" h="100%" border={"1px solid #dbdbdb"}>
+                <Image key={data.id} src={`http://localhost:5000/uploads/` + data.image}  alt="thread" w={"full"} h={"full"} />
+              </GridItem> 
+              ) : null            
               ))}
             </Grid>
           ) : (
