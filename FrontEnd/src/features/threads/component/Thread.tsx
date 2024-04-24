@@ -1,8 +1,10 @@
+import React from "react";
 import { Box, Image, Text } from "@chakra-ui/react";
 import { AiFillHeart } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { IThreadCard } from "@/types/Thread";
 import { BsCircleFill } from "react-icons/bs";
+import { FaComments } from "react-icons/fa";
 import useLikes from "../Hooks/useLikes";
 import useTimes from "@/utils/useTimes";
 
@@ -76,15 +78,17 @@ export const ThreadCard = (props: IThreadCard): React.JSX.Element => {
               {props.likes_count}
               <AiFillHeart />
             </Box>
-
+          
             <Box
               display={"flex"}
               alignItems={"center"}
               backgroundColor={"transparent"}
+              gap={1}
               cursor={"pointer"}
               onClick={() => navigate(`/thread/${props.id}`)}
               _hover={{ color: "gray" }}
             >
+              <FaComments /> 
               {props.replies_count} Replies
             </Box>
           </Box>

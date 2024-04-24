@@ -74,7 +74,7 @@ export default function Follow() {
               fontSize={"md"}
               pb={2}
               color={"white"}
-              borderBottom={isActiveFollowers ? "1px solid green" : "1px solid #dbdbdb"}
+              borderBottom={isActiveFollowers ? "2px solid green" : "2px solid #dbdbdb"}
             >
               Followers
             </Text>
@@ -86,7 +86,7 @@ export default function Follow() {
               fontSize={"md"}
               pb={2}
               color={"white"}
-              borderBottom={isActiveFollowing ? "1px solid green" : "1px solid #dbdbdb"}
+              borderBottom={isActiveFollowing ? "2px solid green" : "2px solid #dbdbdb"}
             >
               Following
             </Text>

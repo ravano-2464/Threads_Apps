@@ -173,8 +173,7 @@ export default function Profile() {
             onClick={handleAllPostChange}
             cursor={"pointer"}
             pb={2}
-            borderBottom={isAllPost ? "1px solid white" : "1px solid #dbdbdb"}
-            borderRight={"1px solid #dbdbdb"}
+            borderBottom={isAllPost ? "2px solid green" : "1px solid #dbdbdb"}
           >
             <Text textAlign={"center"} color={"white"}>All Post</Text>
           </Box>
@@ -183,7 +182,7 @@ export default function Profile() {
             onClick={handleIsMediaChange}
             cursor={"pointer"}
             pb={2}
-            borderBottom={isMedia ? "1px solid white" : "1px solid #dbdbdb"}
+            borderBottom={isMedia ? "2px solid green" : "1px solid #dbdbdb"}
           >
             <Text textAlign={"center"} color={"white"}>Media</Text>
           </Box>

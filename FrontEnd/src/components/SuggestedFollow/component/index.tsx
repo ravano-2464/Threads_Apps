@@ -65,7 +65,7 @@ export const SuggestedFollow = (): React.JSX.Element => {
                 borderRadius={"full"}
                 colorScheme={item?.isFollowing ?? "green"}
                 bg={!item?.isFollowing ? "green" : "gray"}
-                _hover={{ bg: !item?.isFollowing ? "gray" : "white" }}
+                _hover={{ bg: !item?.isFollowing ? "black" : "green" }}
                 px={3}
                 onClick={() => mutationFollow.mutate(item?.id)}
               >
