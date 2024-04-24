@@ -144,7 +144,7 @@ export default function Profile() {
 
         <Box>
           <Text fontWeight={"bold"} fontSize={"2xl"} color={"white"}>
-            {auth?.full_name}
+            👋🏻 {auth?.full_name}
           </Text>
           <Text color={"gray"} fontSize={"sm"}>
             @{auth?.username}
