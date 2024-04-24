@@ -21,9 +21,10 @@ export default function ListUser() {
   });
 
   const handleChangeFilter = (e: { target: { value: string } }) => {
-    setFilter(e.target.value);
+    const value = e.target.value.toLowerCase();
+    setFilter(value);
   };
-
+  
   return (
     <Box display={"flex"} justifyContent={"center"}>
       <Box
@@ -50,10 +51,12 @@ export default function ListUser() {
             onChange={handleChangeFilter}
           />
         </InputGroup>
-
+  
         {getUsers?.map((data: any) => {
           if (
-            filter == "" ||
+            filter === "" ||
+            (filter.startsWith("@") &&
+              data.username.toLowerCase().includes(filter.substring(1))) ||
             data.full_name.toLowerCase().includes(filter.toLowerCase())
           ) {
             return (
@@ -70,10 +73,9 @@ export default function ListUser() {
               </Box>
             );
           }
-
           return null;
         })}
       </Box>
     </Box>
   );
-}
+}  
