@@ -41,7 +41,7 @@ export default function CardUser(props: any) {
         >
           {props?.full_name}
         </Text>
-        <Text fontSize={"xs"} color={"white"}>
+        <Text fontSize={"xs"} color={"gray"}>
           @{props?.username}
         </Text>
         {props?.description && (

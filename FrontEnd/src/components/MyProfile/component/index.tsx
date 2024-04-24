@@ -86,7 +86,7 @@ export function MyProfile() {
             <Text fontWeight={"bold"} fontSize={"md"} color={"white"}>
               {auth?.full_name}
             </Text>
-            <Text fontSize={"xs"} color={"white"}>
+            <Text fontSize={"xs"} color={"gray"}>
               @{auth?.username}
             </Text>
             <Text color={"white"}>

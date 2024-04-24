@@ -23,7 +23,7 @@ export function Follows(props: IFollow) {
             <Box display={"flex"}>
               <Text fontWeight={'bold'}>{props.full_name}</Text>
             </Box>
-            <Text color="white">@{props.username}</Text>
+            <Text color="gray">@{props.username}</Text>
             <Text>{props.description}</Text>
           </Box>
           <Box flex={1} display="flex" justifyContent={"flex-end"} alignItems={'center'}>

@@ -146,7 +146,7 @@ export default function Profile() {
           <Text fontWeight={"bold"} fontSize={"2xl"} color={"white"}>
             {auth?.full_name}
           </Text>
-          <Text color={"white"} fontSize={"sm"}>
+          <Text color={"gray"} fontSize={"sm"}>
             @{auth?.username}
           </Text>
           {auth?.description ? (

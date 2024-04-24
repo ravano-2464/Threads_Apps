@@ -55,7 +55,7 @@ export const SuggestedFollow = (): React.JSX.Element => {
                 >
                   {item?.full_name}
                 </Text>
-                <Text fontSize={"xs"} color={"white"}>
+                <Text fontSize={"xs"} color={"gray"}>
                   @{item?.username}
                 </Text>
               </Box>
