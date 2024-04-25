@@ -2,6 +2,8 @@ import { Box, Input, FormControl, Image, Text, Button } from '@chakra-ui/react'
 import { ThreadCard } from '@/features/threads';
 import { useState, useEffect, ChangeEvent } from 'react';
 import { API } from '@/libs/api';
+import { useSelector } from "react-redux";
+import { RootState } from '@/store/type/RootState';
 import { useParams } from "react-router-dom";
 import { IThreadCard } from '@/types/Thread';
 import { ReplyPost } from '@/types/Reply';
@@ -9,6 +11,7 @@ import { useQuery } from '@tanstack/react-query';
 
 export default function DetailThread() {
   const { id } = useParams()
+  const auth = useSelector((state: RootState) => state.auth)
   const [data, setData] = useState<IThreadCard>()
   const [reply, setReply] = useState<ReplyPost>({
     content: "",
@@ -122,7 +125,7 @@ export default function DetailThread() {
             >
               <Image
                 ms={6}
-                src={data.users?.picture ? data.users?.picture : "https://www.greenscene.co.id/wp-content/uploads/2020/11/goku-ultra.jpg"}
+                src={typeof auth?.image === "string" ? auth?.image : "https://www.greenscene.co.id/wp-content/uploads/2020/11/goku-ultra.jpg"}
                 width={"50px"}
                 height={"50px"}
                 objectFit={"cover"}
