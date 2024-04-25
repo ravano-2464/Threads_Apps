@@ -20,13 +20,13 @@ export default function Profile() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleAllPostChange = (): void => {
-    setIsAllPost(!isAllPost);
-    setIsMedia(!isMedia);
+    setIsAllPost(true);
+    setIsMedia(false);
   };
 
   const handleIsMediaChange = (): void => {
-    setIsAllPost(!isAllPost);
-    setIsMedia(!isMedia);
+    setIsAllPost(false);
+    setIsMedia(true);
   };
 
   const getThreadByUser = async () => {
