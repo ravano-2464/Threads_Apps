@@ -48,7 +48,7 @@ export const ThreadCard = (props: IThreadCard): React.JSX.Element => {
                 color: "#dbdbdb",
               }}
             />
-            <Text ms={2} color="white" fontSize={"sm"}>
+            <Text ms={2} color="gray" fontSize={"sm"}>
               {useTimes(props.posted_at)}
             </Text>
           </Box>

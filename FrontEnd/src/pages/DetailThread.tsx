@@ -138,7 +138,7 @@ export default function DetailThread() {
                 <Box display={"flex"} alignItems={'center'}>
                   <Text fontWeight={"bold"}>{data.users?.full_name}</Text>
                   <Text ms={2} color="gray" fontSize={"sm"}>@{data.users?.username}</Text>
-                  <Text ms={2} color="white" fontSize={"sm"}>
+                  <Text ms={2} color="gray" fontSize={"sm"}>
                   • {useTimes(data.posted_at)}
                   </Text>
                 </Box>
