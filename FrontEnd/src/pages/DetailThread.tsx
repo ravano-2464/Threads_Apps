@@ -7,6 +7,7 @@ import { RootState } from '@/store/type/RootState';
 import { useParams } from "react-router-dom";
 import { IThreadCard } from '@/types/Thread';
 import { ReplyPost } from '@/types/Reply';
+import useTimes from "@/utils/useTimes";
 import { useQuery } from '@tanstack/react-query';
 
 export default function DetailThread() {
@@ -137,6 +138,9 @@ export default function DetailThread() {
                 <Box display={"flex"} alignItems={'center'}>
                   <Text fontWeight={"bold"}>{data.users?.full_name}</Text>
                   <Text ms={2} color="gray" fontSize={"sm"}>@{data.users?.username}</Text>
+                  <Text ms={2} color="white" fontSize={"sm"}>
+                  • {useTimes(data.posted_at)}
+                  </Text>
                 </Box>
             
                 <Text>{data?.content}</Text>
