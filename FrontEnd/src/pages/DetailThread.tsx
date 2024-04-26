@@ -126,7 +126,7 @@ export default function DetailThread() {
             >
               <Image
                 ms={6}
-                src={typeof auth?.image === "string" ? auth?.image : "https://www.greenscene.co.id/wp-content/uploads/2020/11/goku-ultra.jpg"}
+                src={typeof data.users?.image === "string" ? data.users?.image : "https://www.greenscene.co.id/wp-content/uploads/2020/11/goku-ultra.jpg"}
                 width={"50px"}
                 height={"50px"}
                 objectFit={"cover"}
