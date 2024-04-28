@@ -2,15 +2,18 @@ import React, { useEffect, useState } from "react";
 import { Footer, Navbar, SuggestedFollow } from "@/components";
 import { RootState } from "@/store/type/RootState";
 import { Box, Text, Avatar, useDisclosure, Image, Button, Grid, GridItem } from "@chakra-ui/react";
-import { useSelector } from "react-redux";
-import { useNavigate, useParams } from "react-router-dom";
-import { AiOutlineArrowLeft } from "react-icons/ai";
+import { useSelector, useDispatch } from "react-redux";
+import { setAuthToken } from "@/libs/api";
+import { AUTH_LOGOUT } from "@/store/RootReducer";
+import { useNavigate, useParams, Link } from "react-router-dom";
+import { AiOutlineArrowLeft, AiOutlineExport } from "react-icons/ai";
 import { ThreadCard } from "@/features/threads";
 import EditProfileModal from "@/features/profile/components/EditProfileModal";
 import { API } from "@/libs/api";
 
 export default function Profile() {
   const { id } = useParams();
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const auth = useSelector((state: RootState) => state.auth);
   const [countFollow, setCountFollow] = useState<{ followers: number; followings: number }>({ followers: 0, followings: 0 });
@@ -60,11 +63,33 @@ export default function Profile() {
     fetchFollowCounts();
   }, []);
 
+  const handleLogout = () => {
+    dispatch(AUTH_LOGOUT());
+    setAuthToken("");
+    window.location.reload();
+  };
+
   return (
     <Box backgroundColor="#1d1d1d" height="100vh" overflowY="scroll">
       <Box display="flex" width="290px" height="fit-content" position="fixed" left="20px" borderRight="1px solid #262626" paddingRight="-30px" h="100vh">
         <Box width="100%" display="flex" flexDirection="column" gap={2}>
           <Navbar />
+          <Link to={"/auth/login"} onClick={handleLogout}>
+            <Text
+              cursor={"pointer"}
+              fontWeight={"bold"}
+              mb={4}
+              fontSize={"xl"}
+              _hover={{ textDecoration: "underline" }}
+              display={"flex"}
+              alignItems={"center"}
+              gap={2}
+              color="white"
+            >
+              <AiOutlineExport />
+              Logout
+            </Text>
+          </Link>
         </Box>
       </Box>
 
