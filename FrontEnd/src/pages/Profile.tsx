@@ -72,7 +72,7 @@ export default function Profile() {
   return (
     <Box backgroundColor="#1d1d1d" height="100vh" overflowY="scroll">
       <Box display="flex" width="290px" height="fit-content" position="fixed" left="20px" borderRight="1px solid #262626" paddingRight="-30px" h="100vh">
-        <Box width="100%" display="flex" flexDirection="column" gap={2}>
+        <Box width="100%" display="flex" flexDirection="column" gap={2} justifyContent={"space-between"}>
           <Navbar />
           <Link to={"/auth/login"} onClick={handleLogout}>
             <Text
