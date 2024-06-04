@@ -38,7 +38,7 @@ export default function Forget() {
       height={"750px"}
     >
       <FormForget />
-      <Box display={"flex"} gap={2} mt={4}>
+      <Box display={"flex"} gap={2} mt={4} justifyContent={"space-between"}>
         <Text color={"white"}>Already have account?</Text>
         <Text
           color={"green"}

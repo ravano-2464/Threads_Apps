@@ -30,7 +30,7 @@ export default function Register() {
       ) : (
         <>
           <FormRegister />
-          <Box display={"flex"} gap={2} mt={4}>
+          <Box display={"flex"} gap={2} mt={4} justifyContent={"space-between"}>
             <Text color={"white"}>Already have an account?</Text>
             <Text 
               color={"green"} 

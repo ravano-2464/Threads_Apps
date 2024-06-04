@@ -5,7 +5,6 @@ import { API } from '@/libs/api';
 export default function useFollows() {
   const dispatch = useDispatch()
 
-  
   async function handleFollow(followedUserId: number, isFollowed: boolean, id: number) {
     try {
       if(!isFollowed) {
